@@ -8,7 +8,7 @@ namespace TwinSkinLondon.Models
 {
     public class PaymentCard
     {
-        public int CardID { get; set; }
+        public int PaymentCardID { get; set; }
 
         [Required, StringLength(20)]
         public string CardName { get; set; }

@@ -8,7 +8,7 @@ namespace TwinSkinLondon.Models
 {
     public class Product
     {
-        private int ProductID { get; set; }
+        public int ProductID { get; set; }
 
         [Required]
         [StringLength(50)]
