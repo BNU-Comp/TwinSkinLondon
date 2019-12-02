@@ -79,6 +79,6 @@ namespace TwinSkinLondon.Models
         West Sussex,
         West Yorkshire,
         Wiltshire,
-        Worcestershire
+        Worcestershire,
     }
 }
