@@ -10,11 +10,25 @@ namespace TwinSkinLondon.Models
     {
         //Tom B
         public int AddressID { get; set; }
-        public string AddressLine1 { get; set; }
+
+        public string HouseNumber { get; set; }
+
         public string Street { get; set; }
-        public string County { get; set; }
+
+        public Counties County { get; set; }
+
         public string Town { get; set; }
+
         public string Postcode { get; set; }
 
+        //
+
+    }
+
+    public enum Counties
+    {
+        Bucks,
+        Herts,
+        Beds
     }
 }
