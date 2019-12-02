@@ -25,10 +25,12 @@ namespace TwinSkinLondon.Models
         [Required, Range(0,999)]
         public int CVV { get; set; }
 
-        public int CustomerID { get; set; }
+        //public int CustomerID { get; set; }
 
-        //
-        public virtual Customer Customer { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        //public virtual Customer Customer { get; set; }
 
     }
 }
