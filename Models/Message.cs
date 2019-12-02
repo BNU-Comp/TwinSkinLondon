@@ -19,7 +19,7 @@ namespace TwinSkinLondon.Models
         public string Subject { get; set; }
 
         [Required]
-        [StringLength(500)]
+        [StringLength(500), DataType(DataType.MultilineText)]
         public string MessageField { get; set; }
 
         public int CustomerID { get; set; }

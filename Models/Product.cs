@@ -9,20 +9,38 @@ namespace TwinSkinLondon.Models
     public class Product
     {
         private int ProductID { get; set; }
+
         [Required]
         [StringLength(50)]
         public string Name { get; set; }
-        [Required]
-        [StringLength(150)]
+
+        [StringLength(500), DataType(DataType.MultilineText)]
         public string Description { get; set; }
-        [Required]
-        [StringLength(50)]
-        public string Category { get; set; }
-        public string Image { get; set; }
-        public decimal Price { get; set; }
-        public string Video { get; set; }
+
+        public Categories  Category { get; set; }
+
+        [StringLength(100), DataType(DataType.ImageUrl)]
+        public string ImageURL { get; set; }
+
+        [DataType(DataType.Currency)]
+        [DisplayFormat(DataFormatString = "{0:C0}")]
+        public decimal ProductPrice { get; set; }
+
+        [StringLength(100), DataType(DataType.Url)]
+        public string VideoURL { get; set; }
+
+        [Range(1, 10)]
         public int Quantity { get; set; }
 
+        // Navigation
 
+        public ICollection<OrderItem> OrderItems { get; set; }
+    }
+
+    public enum Categories
+    {
+        Facial,
+        Body,
+        Hair
     }
 }
