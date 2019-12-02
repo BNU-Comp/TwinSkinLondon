@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TwinSkinLondon.Models
 {
+    /// <summary>
+    /// Comment
+    /// </summary>
     public class Customer
     {
         public int CustomerID { get; set; }
