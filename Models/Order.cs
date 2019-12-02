@@ -17,10 +17,12 @@ namespace TwinSkinLondon.Models
 
         public Status Status { get; set; }
 
-        [DataType(DataType.Currency)] 
+        [DataType(DataType.Currency)]
+        [DisplayFormat(DataFormatString = "{0:C0}")]
         public decimal VAT { get; set; }
 
-        [DataType(DataType.Currency)] // format string
+        [DataType(DataType.Currency)]
+        [DisplayFormat(DataFormatString = "{0:C0}")]
         public decimal DeliveryCharge { get; set; }
 
         public int CustomerID { get; set; }
@@ -34,8 +36,9 @@ namespace TwinSkinLondon.Models
 
     public enum Status
     {
-        recieved,
-        packaged,
-        delivered
+        Recieved,
+        InProgress,
+        Dispatched,
+        Delivered,
     }
 }
