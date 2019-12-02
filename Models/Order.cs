@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 
 namespace TwinSkinLondon.Models
 {
@@ -16,7 +17,7 @@ namespace TwinSkinLondon.Models
 
         public Status Status { get; set; }
 
-        [DataType(DataType.Currency)] // format string
+        [DataType(DataType.Currency)] 
         public decimal VAT { get; set; }
 
         [DataType(DataType.Currency)] // format string
