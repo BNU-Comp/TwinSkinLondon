@@ -15,6 +15,13 @@ namespace TwinSkinLondon.Data
         }
 
         public DbSet<Customer> Customers {get;set;}
+        public DbSet<Address> Addresses{ get; set; }
+        public DbSet<TwinSkinLondon.Models.PaymentCard> PaymentCard { get; set; }
+        public DbSet<TwinSkinLondon.Models.Order> Order { get; set; }
+        public DbSet<TwinSkinLondon.Models.OrderItem> OrderItem { get; set; }
+        public DbSet<TwinSkinLondon.Models.Message> Message { get; set; }
+        public DbSet<TwinSkinLondon.Models.Product> Product { get; set; }
+        public DbSet<TwinSkinLondon.Models.Review> Review { get; set; }
 
     }
 }
