@@ -123,12 +123,17 @@ namespace TwinSkinLondon.Data
                },
 
             };
+            foreach (Customer c in Customers)
+            {
+                context.Customers.Add(c);
+            }
+            context.SaveChanges();
 
         }
 
         private static void InitializeAddress(ApplicationDbContext context)
         {
-            var Address = new Address[]
+            var Addresses = new Address[]
             {
                
                new Address
@@ -223,7 +228,13 @@ namespace TwinSkinLondon.Data
                },
 
             };
+            foreach (Address c in Addresses)
+            {
+                context.Addresses.Add(c);
+            }
+            context.SaveChanges();
         }
+
         private static void InitializeProduct(ApplicationDbContext context)
         {
 
