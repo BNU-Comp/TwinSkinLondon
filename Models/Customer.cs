@@ -31,8 +31,10 @@ namespace TwinSkinLondon.Models
         public string ContactNumber { get; set; }
 
         // Foreign Key
-        public int PaymentCardID { get; set; }
-        public int AddressID { get; set; }
+        
+        public Nullable<int> PaymentCardID { get; set; }
+
+        public Nullable<int> AddressID { get; set; }
         // Navigation Properties
 
         public virtual PaymentCard PaymentCard { get; set; }

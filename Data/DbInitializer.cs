@@ -12,12 +12,12 @@ namespace TwinSkinLondon.Data
         {
             InitializeCustomers(context);
             InitializeAddress(context);
-            InitializeProduct(context);
-            InitializePaymentCard(context);
-            InitializeMessage(context);
-            InitializeOrder(context);
-            InitializeOrderItem(context);
-            InitializeReview(context);
+            //InitializeProduct(context);
+            //InitializePaymentCard(context);
+            //InitializeMessage(context);
+            //InitializeOrder(context);
+            //InitializeOrderItem(context);
+            //InitializeReview(context);
 
         }
 
@@ -28,117 +28,123 @@ namespace TwinSkinLondon.Data
             {
                 return;
             }
+
             var Customers = new Customer[]
             {
                
                 new Customer
                {
-               FirstName= "Rebecca",
-               AddressID= 1,
-               LastName= "Abbott",
-               ContactNumber= "07653217864",
-               EmailAddress= "Gunner_Wilkinson@demetris.com",
-               CustomerID= 1,
+                   FirstName= "Rebecca",
+                   AddressID= 1,
+                   LastName= "Abbott",
+                   ContactNumber= "07653217864",
+                   EmailAddress= "Gunner_Wilkinson@demetris.com",
+                   //CustomerID= 1,
                },
                  new Customer
                {
-               FirstName= "Dawspm",
-               AddressID= 2,
-               LastName= "Elisha",
-               ContactNumber= "07653217863",
-               EmailAddress= "Eleazar@watson.tv",
-               CustomerID= 2,
+                   FirstName= "Dawspm",
+                   AddressID= 2,
+                   LastName= "Elisha",
+                   ContactNumber= "07653217863",
+                   EmailAddress= "Eleazar@watson.tv",
+                   //CustomerID= 2,
                },
                   new Customer
                {
-               FirstName= "Elizer",
-               AddressID= 3,
-               LastName= "Favian",
-               ContactNumber= "07653217862",
-               EmailAddress= "Fleta@verla.net",
-               CustomerID= 3,
+                   FirstName= "Elizer",
+                   AddressID= 3,
+                   LastName= "Favian",
+                   ContactNumber= "07653217862",
+                   EmailAddress= "Fleta@verla.net",
+                   //CustomerID= 3,
                },
                    new Customer
                {
-               FirstName= "Guillermo",
-               AddressID=4,
-               LastName= "Esmeralda",
-               ContactNumber= "07653217861",
-               EmailAddress= "Uriah.Hoeger@flo.net",
-               CustomerID= 4,
+                   FirstName= "Guillermo",
+                   AddressID=4,
+                   LastName= "Esmeralda",
+                   ContactNumber= "07653217861",
+                   EmailAddress= "Uriah.Hoeger@flo.net",
+                   //CustomerID= 4,
                },
                     new Customer
                {
-               FirstName= "Cielo",
-               AddressID=5,
-               LastName= "Runolfsdottir",
-               ContactNumber= "07653217860",
-               EmailAddress="Lavon@mckenna.name",
-               CustomerID= 5,
+                   FirstName= "Cielo",
+                   AddressID=5,
+                   LastName= "Runolfsdottir",
+                   ContactNumber= "07653217860",
+                   EmailAddress="Lavon@mckenna.name",
+                   //CustomerID= 5,
                },
                      new Customer
                {
-               FirstName= "Cierra",
-               AddressID= 6,
-               LastName= "Jeanie",
-               ContactNumber= "07653217866",
-               EmailAddress= "Jeanie@wilford.ca",
-               CustomerID= 6,
+                   FirstName= "Cierra",
+                   AddressID= 6,
+                   LastName= "Jeanie",
+                   ContactNumber= "07653217866",
+                   EmailAddress= "Jeanie@wilford.ca",
+                   //CustomerID= 6,
                },
                       new Customer
                {
-               FirstName= "Yessenia",
-               AddressID= 7,
-               LastName= "Meredith",
-               ContactNumber= "07653217867",
-               EmailAddress="Letha_Spinka@kamryn.io",
-               CustomerID= 7,
+                   FirstName= "Yessenia",
+                   AddressID= 7,
+                   LastName= "Meredith",
+                   ContactNumber= "07653217867",
+                   EmailAddress="Letha_Spinka@kamryn.io",
+                   //CustomerID= 7,
                },
                        new Customer
                {
-               FirstName= "Travon",
-               AddressID=8,
-               LastName= "Jones",
-               ContactNumber= "07653217868",
-               EmailAddress= "Amiya_Runte@billie.com",
-               CustomerID= 8,
+                   FirstName= "Travon",
+                   AddressID=8,
+                   LastName= "Jones",
+                   ContactNumber= "07653217868",
+                   EmailAddress= "Amiya_Runte@billie.com",
+                   //CustomerID= 8,
                },
                         new Customer
                {
-               FirstName= "Lorena",
-               AddressID= 9,
-               LastName= "Kadin",
-               ContactNumber= "07653217869",
-               EmailAddress= "Reed@adriana.co.uk",
-               CustomerID= 9,
+                   FirstName= "Lorena",
+                   AddressID= 9,
+                   LastName= "Kadin",
+                   ContactNumber= "07653217869",
+                   EmailAddress= "Reed@adriana.co.uk",
+                   //CustomerID= 9,
                },
-                        new Customer
+               new Customer
                {
-               FirstName= "Alena",
-               AddressID= 10,
-               LastName= "Cole",
-               ContactNumber= "07653217865",
-               EmailAddress= "Kasey@markus.tv",
-               CustomerID= 10,
+                   FirstName= "Alena",
+                   AddressID= 10,
+                   LastName= "Cole",
+                   ContactNumber= "07653217865",
+                   EmailAddress= "Kasey@markus.tv",
+                   //CustomerID= 10,
                },
 
             };
+
             foreach (Customer c in Customers)
             {
                 context.Customers.Add(c);
             }
-            context.SaveChanges();
 
+            context.SaveChanges();
         }
 
         private static void InitializeAddress(ApplicationDbContext context)
         {
+            if (context.Addresses.Any())
+            {
+                return;
+            }
+
             var Addresses = new Address[]
             {
-               
                new Address
                {
-                   AddressID = 1,
+                   //AddressID = 1,
                    HouseNumber = "7",
                    Street = "Park Lane",
                    County = Counties.Wiltshire,
@@ -147,7 +153,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   AddressID = 2,
+                   //AddressID = 2,
                    HouseNumber = "30A",
                    Street = "Powlmore Avenue",
                    County = Counties.Shropshire,
@@ -156,7 +162,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   AddressID = 3,
+                   //AddressID = 3,
                    HouseNumber = "Lord's Manor",
                    Street = "Mayfair",
                    County = Counties.CityofLondon,
@@ -165,7 +171,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   AddressID = 4,
+                   //AddressID = 4,
                    HouseNumber = "43",
                    Street = "Old Kent Road",
                    County = Counties.CityofLondon,
@@ -174,7 +180,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   AddressID = 5,
+                   //AddressID = 5,
                    HouseNumber = "103B",
                    Street = "Raven's Court",
                    County = Counties.Cornwall,
@@ -183,7 +189,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   AddressID = 6,
+                   //AddressID = 6,
                    HouseNumber = "9",
                    Street = "Blenheim Close",
                    County = Counties.Kent,
@@ -192,7 +198,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   AddressID = 7,
+                   //AddressID = 7,
                    HouseNumber = "221b",
                    Street = "Baker Street",
                    County = Counties.GreaterLondon,
@@ -201,7 +207,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   AddressID = 8,
+                   //AddressID = 8,
                    HouseNumber = "45",
                    Street = "Spooner Street",
                    County = Counties.Derbyshire,
@@ -210,7 +216,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   AddressID = 9,
+                   //AddressID = 9,
                    HouseNumber = "15",
                    Street = "Sesame Street",
                    County = Counties.NorthYorkshire,
@@ -219,7 +225,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   AddressID = 10,
+                   //AddressID = 10,
                    HouseNumber = "10",
                    Street = "Bond Street",
                    County = Counties.Kent,
@@ -228,10 +234,12 @@ namespace TwinSkinLondon.Data
                },
 
             };
+
             foreach (Address c in Addresses)
             {
                 context.Addresses.Add(c);
             }
+
             context.SaveChanges();
         }
 
