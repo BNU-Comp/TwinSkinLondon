@@ -30,11 +30,12 @@ namespace TwinSkinLondon.Models
         [StringLength(20), DataType(DataType.PhoneNumber)]
         public string ContactNumber { get; set; }
 
-        // Foreign Key
+        // Foreign Keys
         
         public Nullable<int> PaymentCardID { get; set; }
 
         public Nullable<int> AddressID { get; set; }
+
         // Navigation Properties
 
         public virtual PaymentCard PaymentCard { get; set; }
