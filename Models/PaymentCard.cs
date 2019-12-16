@@ -13,7 +13,7 @@ namespace TwinSkinLondon.Models
         [Required, StringLength(20)]
         public string CardName { get; set; }
 
-        [Required, StringLength(20)]
+        [Required, StringLength(19,MinimumLength =19)]
         public string CardNumber { get; set; }
 
         [Required, Range(1,12)]
@@ -22,7 +22,7 @@ namespace TwinSkinLondon.Models
         [Required, Range(2019, 2030)]
         public int ExpiryYear { get; set; }
 
-        [Required, Range(0,999)]
+        [Required, Range(100,999)]
         public int CVV { get; set; }
 
         //public int CustomerID { get; set; }

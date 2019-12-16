@@ -12,9 +12,8 @@ namespace TwinSkinLondon.Data
         {
             InitializeAddress(context);
             InitializePaymentCard(context);
-            InitializeCustomers(context);
-          
-            //InitializeProduct(context);
+            InitializeCustomers(context);         
+            InitializeProduct(context);
             
             //InitializeMessage(context);
             //InitializeOrder(context);

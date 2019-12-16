@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TwinSkinLondon.Models;
 
@@ -16,6 +17,19 @@ namespace TwinSkinLondon.Controllers
         }
 
         public IActionResult About()
+        {
+            ViewData["Message"] = "Your application description page.";
+
+            return View();
+        }
+        
+        /// <summary>
+        ///
+        /// </summary>
+        /// <returns></returns>
+        
+            [Authorize]
+        public IActionResult AddCustomer()
         {
             ViewData["Message"] = "Your application description page.";
 
