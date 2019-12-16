@@ -10,10 +10,12 @@ namespace TwinSkinLondon.Data
     {
         public static void Initialize(ApplicationDbContext context)
         {
-            InitializeCustomers(context);
             InitializeAddress(context);
+            InitializePaymentCard(context);
+            InitializeCustomers(context);
+          
             //InitializeProduct(context);
-            //InitializePaymentCard(context);
+            
             //InitializeMessage(context);
             //InitializeOrder(context);
             //InitializeOrderItem(context);
@@ -39,6 +41,7 @@ namespace TwinSkinLondon.Data
                    LastName= "Abbott",
                    ContactNumber= "07653217864",
                    EmailAddress= "Gunner_Wilkinson@demetris.com",
+                   PaymentCardID = 1
                    //CustomerID= 1,
                },
                  new Customer
@@ -48,6 +51,7 @@ namespace TwinSkinLondon.Data
                    LastName= "Elisha",
                    ContactNumber= "07653217863",
                    EmailAddress= "Eleazar@watson.tv",
+                   PaymentCardID = 2
                    //CustomerID= 2,
                },
                   new Customer
@@ -57,6 +61,7 @@ namespace TwinSkinLondon.Data
                    LastName= "Favian",
                    ContactNumber= "07653217862",
                    EmailAddress= "Fleta@verla.net",
+                   PaymentCardID = 3
                    //CustomerID= 3,
                },
                    new Customer
@@ -66,6 +71,7 @@ namespace TwinSkinLondon.Data
                    LastName= "Esmeralda",
                    ContactNumber= "07653217861",
                    EmailAddress= "Uriah.Hoeger@flo.net",
+                   PaymentCardID = 4
                    //CustomerID= 4,
                },
                     new Customer
@@ -75,6 +81,7 @@ namespace TwinSkinLondon.Data
                    LastName= "Runolfsdottir",
                    ContactNumber= "07653217860",
                    EmailAddress="Lavon@mckenna.name",
+                   PaymentCardID = 5
                    //CustomerID= 5,
                },
                      new Customer
@@ -84,6 +91,7 @@ namespace TwinSkinLondon.Data
                    LastName= "Jeanie",
                    ContactNumber= "07653217866",
                    EmailAddress= "Jeanie@wilford.ca",
+                   PaymentCardID = 6
                    //CustomerID= 6,
                },
                       new Customer
@@ -93,6 +101,7 @@ namespace TwinSkinLondon.Data
                    LastName= "Meredith",
                    ContactNumber= "07653217867",
                    EmailAddress="Letha_Spinka@kamryn.io",
+                   PaymentCardID = 7
                    //CustomerID= 7,
                },
                        new Customer
@@ -102,6 +111,7 @@ namespace TwinSkinLondon.Data
                    LastName= "Jones",
                    ContactNumber= "07653217868",
                    EmailAddress= "Amiya_Runte@billie.com",
+                   PaymentCardID = 8
                    //CustomerID= 8,
                },
                         new Customer
@@ -111,6 +121,7 @@ namespace TwinSkinLondon.Data
                    LastName= "Kadin",
                    ContactNumber= "07653217869",
                    EmailAddress= "Reed@adriana.co.uk",
+                   PaymentCardID = 9
                    //CustomerID= 9,
                },
                new Customer
@@ -120,6 +131,7 @@ namespace TwinSkinLondon.Data
                    LastName= "Cole",
                    ContactNumber= "07653217865",
                    EmailAddress= "Kasey@markus.tv",
+                   PaymentCardID = 10
                    //CustomerID= 10,
                },
 
@@ -264,6 +276,112 @@ namespace TwinSkinLondon.Data
 
         private static void InitializePaymentCard(ApplicationDbContext context)
         {
+
+            if (context.PaymentCard.Any())
+            {
+                return;
+            }
+
+            var paymentCards = new PaymentCard[]
+            {
+                new PaymentCard
+                {
+                    CardName = "Rebecca",
+                    CardNumber = "1234 5678 1234 5678",
+                    CVV = 201,
+                    ExpiryMonth = 11,
+                    ExpiryYear = 2020,
+
+                },
+            new PaymentCard
+            {
+                CardName = "Dawspm",
+                CardNumber = "5673 5788 1124 5698",
+                CVV = 341,
+                ExpiryMonth = 9,
+                ExpiryYear = 2022,
+
+            },
+                new PaymentCard
+                {
+                    CardName = "Elizer",
+                    CardNumber = "9265 5568 1244 6867",
+                    CVV = 450,
+                    ExpiryMonth = 2,
+                    ExpiryYear = 2025,
+
+                },
+                new PaymentCard
+                {
+                    CardName = "Guillermo",
+                    CardNumber = "7364 5128 9684 9067",
+                    CVV = 309,
+                    ExpiryMonth = 11,
+                    ExpiryYear = 2020,
+
+                },
+                new PaymentCard
+                {
+                    CardName = "Cielo",
+                    CardNumber = "4676 1289 9032 7902",
+                    CVV = 102,
+                    ExpiryMonth = 7,
+                    ExpiryYear = 2028,
+
+                },
+                new PaymentCard
+                {
+                    CardName = "Cirra",
+                    CardNumber = "8974 6788 1924 9088",
+                    CVV = 567,
+                    ExpiryMonth = 5,
+                    ExpiryYear = 2027,
+
+                },
+                new PaymentCard
+                {
+                    CardName = "Yessenia",
+                    CardNumber = "5634 6734 8934 7638",
+                    CVV = 221,
+                    ExpiryMonth = 1,
+                    ExpiryYear = 2020,
+
+                },
+                new PaymentCard
+                {
+                    CardName = "Travon",
+                    CardNumber = "6784 6736 6372 7997",
+                    CVV = 999,
+                    ExpiryMonth = 2,
+                    ExpiryYear = 2030,
+
+                },
+                new PaymentCard
+                {
+                    CardName = "Lorena",
+                    CardNumber = "5634 6778 7388 5908",
+                    CVV = 666,
+                    ExpiryMonth = 11,
+                    ExpiryYear = 2020,
+
+                },
+                new PaymentCard
+                {
+                    CardName = "Alena",
+                    CardNumber = "8934 2784 1234 7464",
+                    CVV = 100,
+                    ExpiryMonth = 8,
+                    ExpiryYear = 2034,
+
+                },
+
+            };
+            foreach (PaymentCard c in paymentCards)
+            {
+                context.PaymentCard.Add(c);
+            }
+
+            context.SaveChanges();
 
         }
 
