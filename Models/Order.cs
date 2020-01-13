@@ -15,7 +15,7 @@ namespace TwinSkinLondon.Models
 
         public DateTime DateDelivered { get; set; }
 
-        public Status Status { get; set; }
+        public string Status { get; set; }
 
         [DataType(DataType.Currency)]
         [DisplayFormat(DataFormatString = "{0:C0}")]

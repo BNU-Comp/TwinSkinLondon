@@ -14,6 +14,8 @@ namespace TwinSkinLondon.Data
             InitializePaymentCard(context);
             InitializeCustomers(context);         
             InitializeProduct(context);
+            InitializeOrder(context);
+            InitializeOrderItem(context);
             
             //InitializeMessage(context);
             //InitializeOrder(context);
@@ -256,17 +258,395 @@ namespace TwinSkinLondon.Data
 
         private static void InitializeProduct(ApplicationDbContext context)
         {
+            if (context.Product.Any())
+            {
+                return;
+            }
 
+            var Products = new Product[]
+            {
+               new Product
+               {
+                   //ProductID = 1,
+                   Name = "Night Gel",
+                   Description = "dffseb",
+                   Category = Categories.Facial,
+                   ImageURL = "dfjhsfsf",
+                   ProductPrice = 10,
+                   VideoURL ="gdwisd",
+                   Quantity = 5,
+
+               },
+               new Product
+               {
+                   //ProductID = 2,
+                   Name = "Night Gel",
+                   Description = "dffseb",
+                   Category = Categories.Facial,
+                   ImageURL = "dfjhsfsf",
+                   ProductPrice = 10,
+                   VideoURL ="gdwisd",
+                   Quantity = 5,
+
+               },
+               new Product
+               {
+                   //ProductID = 3,
+                   Name = "Night Gel",
+                   Description = "dffseb",
+                   Category = Categories.Facial,
+                   ImageURL = "dfjhsfsf",
+                   ProductPrice = 10,
+                   VideoURL ="gdwisd",
+                   Quantity = 5,
+
+               },
+               new Product
+               {
+                   //ProductID = 4,
+                   Name = "Night Gel",
+                   Description = "dffseb",
+                   Category = Categories.Facial,
+                   ImageURL = "dfjhsfsf",
+                   ProductPrice = 10,
+                   VideoURL ="gdwisd",
+                   Quantity = 5,
+
+               },
+               new Product
+               {
+                   //ProductID = 5,
+                   Name = "Night Gel",
+                   Description = "dffseb",
+                   Category = Categories.Facial,
+                   ImageURL = "dfjhsfsf",
+                   ProductPrice = 10,
+                   VideoURL ="gdwisd",
+                   Quantity = 5,
+
+               },
+               new Product
+               {
+                   //ProductID = 6,
+                   Name = "Night Gel",
+                   Description = "dffseb",
+                   Category = Categories.Facial,
+                   ImageURL = "dfjhsfsf",
+                   ProductPrice = 10,
+                   VideoURL ="gdwisd",
+                   Quantity = 5,
+
+               },
+               new Product
+               {
+                   //ProductID = 7,
+                   Name = "Night Gel",
+                   Description = "dffseb",
+                   Category = Categories.Facial,
+                   ImageURL = "dfjhsfsf",
+                   ProductPrice = 10,
+                   VideoURL ="gdwisd",
+                   Quantity = 5,
+
+               },
+               new Product
+               {
+                   //ProductID = 8,
+                   Name = "Night Gel",
+                   Description = "dffseb",
+                   Category = Categories.Facial,
+                   ImageURL = "dfjhsfsf",
+                   ProductPrice = 10,
+                   VideoURL ="gdwisd",
+                   Quantity = 5,
+
+               },
+               new Product
+               {
+                   //ProductID = 9,
+                   Name = "Night Gel",
+                   Description = "dffseb",
+                   Category = Categories.Facial,
+                   ImageURL = "dfjhsfsf",
+                   ProductPrice = 10,
+                   VideoURL ="gdwisd",
+                   Quantity = 5,
+
+               },
+               new Product
+               {
+                   //ProductID = 10,
+                   Name = "Night Gel",
+                   Description = "dffseb",
+                   Category = Categories.Facial,
+                   ImageURL = "dfjhsfsf",
+                   ProductPrice = 10,
+                   VideoURL ="gdwisd",
+                   Quantity = 5,
+
+               }
+
+
+            };
+
+            foreach (Product c in Products)
+            {
+                context.Product.Add(c);
+            }
+
+            context.SaveChanges();
         }
 
         private static void InitializeOrderItem(ApplicationDbContext context)
         {
+            if (context.OrderItem.Any())
+            {
+                return;
+            }
+
+            var OrderItems = new OrderItem[]
+            {
+               new OrderItem
+               {
+                   //OrderItemID = 1,
+                  OrderID = 1,
+                  ProductID = 1,
+                  Price = 20,
+                  Quantity = 2,
+
+                },
+               new OrderItem
+               {
+                   //OrderItemID = 2,
+                  OrderID = 2,
+                  ProductID = 2,
+                  Price = 25,
+                  Quantity = 1,
+
+                },
+               new OrderItem
+               {
+                   //OrderItemID = 3,
+                  OrderID = 3,
+                  ProductID = 3,
+                  Price = 20,
+                  Quantity = 2,
+
+                },
+               new OrderItem
+               {
+                   //OrderItemID = 4,
+                  OrderID = 4,
+                  ProductID = 4,
+                  Price = 20,
+                  Quantity = 2,
+
+                },
+               new OrderItem
+               {
+                   //OrderItemID = 5,
+                  OrderID = 5,
+                  ProductID = 5,
+                  Price = 20,
+                  Quantity = 2,
+
+                },
+               new OrderItem
+               {
+                   //OrderItemID = 6,
+                  OrderID = 6,
+                  ProductID = 6,
+                  Price = 20,
+                  Quantity = 2,
+
+                },
+               new OrderItem
+               {
+                   //OrderItemID = 7,
+                  OrderID = 7,
+                  ProductID = 7,
+                  Price = 20,
+                  Quantity = 2,
+
+                },
+               new OrderItem
+               {
+                   //OrderItemID = 8,
+                  OrderID = 8,
+                  ProductID = 8,
+                  Price = 20,
+                  Quantity = 2,
+
+                },
+               new OrderItem
+               {
+                   //OrderItemID = 9,
+                  OrderID = 9,
+                  ProductID = 9,
+                  Price = 20,
+                  Quantity = 2,
+
+                },
+               new OrderItem
+               {
+                   //OrderItemID = 10,
+                  OrderID = 10,
+                  ProductID = 10,
+                  Price = 20,
+                  Quantity = 2,
+
+                },
+
+            };
+               foreach (OrderItem c in OrderItems)
+            {
+                context.OrderItem.Add(c);
+            }
+
+            context.SaveChanges();
 
         }
 
         private static void InitializeOrder(ApplicationDbContext context)
         {
 
+            if (context.Order.Any())
+            {
+                return;
+            }
+
+            var Orders = new Order[]
+            {
+               new Order
+               {
+                   //OrderID = 1,
+                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
+                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
+                  Status = "Delivered",
+                  VAT = 20,
+                  DeliveryCharge = 20,
+                  CustomerID = 1,
+
+                },
+               new Order
+               {
+                   //OrderID = 2,
+                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
+                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
+                  Status = "Delivered",
+                  VAT = 20,
+                  DeliveryCharge = 20,
+                  CustomerID = 2,
+
+                },
+               new Order
+               {
+                   //OrderID = 3,
+                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
+                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
+                  Status = "Delivered",
+                  VAT = 20,
+                  DeliveryCharge = 20,
+                  CustomerID = 3,
+
+                },
+               new Order
+               {
+                   //OrderID = 4,
+                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
+                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
+                  Status = "Delivered",
+                  VAT = 20,
+                  DeliveryCharge = 20,
+                  CustomerID = 4,
+
+                },
+               new Order
+               {
+                   //OrderID = 4,
+                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
+                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
+                  Status = "Delivered",
+                  VAT = 20,
+                  DeliveryCharge = 20,
+                  CustomerID = 4,
+
+                },
+               new Order
+               {
+                   //OrderID = 5,
+                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
+                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
+                  Status = "Delivered",
+                  VAT = 20,
+                  DeliveryCharge = 20,
+                  CustomerID = 5,
+
+                },
+               new Order
+               {
+                   //OrderID = 6,
+                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
+                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
+                  Status = "Delivered",
+                  VAT = 20,
+                  DeliveryCharge = 20,
+                  CustomerID = 6,
+
+                },
+               new Order
+               {
+                   //OrderID = 7,
+                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
+                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
+                  Status = "Delivered",
+                  VAT = 20,
+                  DeliveryCharge = 20,
+                  CustomerID = 7,
+
+                },
+               new Order
+               {
+                   //OrderID = 8,
+                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
+                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
+                  Status = "Delivered",
+                  VAT = 20,
+                  DeliveryCharge = 20,
+                  CustomerID = 8,
+
+                },
+               new Order
+               {
+                   //OrderID = 9,
+                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
+                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
+                  Status = "Delivered",
+                  VAT = 20,
+                  DeliveryCharge = 20,
+                  CustomerID = 9,
+
+                },
+               new Order
+               {
+                   //OrderID = 10,
+                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
+                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
+                  Status = "Delivered",
+                  VAT = 20,
+                  DeliveryCharge = 20,
+                  CustomerID = 10,
+
+                },
+            };
+        
+
+            foreach (Order c in Orders)
+            {
+                context.Order.Add(c);
+            }
+
+            context.SaveChanges();
         }
 
         private static void InitializeMessage(ApplicationDbContext context)
