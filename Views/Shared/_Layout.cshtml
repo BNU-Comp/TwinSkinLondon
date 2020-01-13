@@ -7,7 +7,8 @@
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" type="text/css"/>
+        <link rel="stylesheet" href="~/css/site.css" type="text/css" />
+        <script src="https://kit.fontawesome.com/3d745ed97b.js" crossorigin="anonymous"></script>
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -17,12 +18,19 @@
     </environment>
 </head>
 <body>
-    <div class="row">
-        <div class="col-md-1">
-            <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand"><img src="~/images/Facebook-Logo.jpg" alt="TSL Logo" height="50" width="150"> </a>
+    <div class="topnav">
+        <div class="logo">
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand"><img src="~/images/Facebook-Logo.jpg" alt="TSL Logo" height="50" width="200"> </a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="register">
+            <a asp-area="Identity" asp-page="/Account/Login"><i class="far fa-user-circle"></i>Login</a>
         </div>
     </div>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -40,43 +48,62 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="Reviews">Reviews</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a></li>
                 </ul>
-                <partial name="_LoginPartial" />
             </div>
         </div>
-    </nav>
+        </div>
+        </nav>
 
-    <partial name="_CookieConsentPartial" />
+        <partial name="_CookieConsentPartial" />
 
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2019 - TwinSkinLondon</p>
-            <p><a href="Customers/Index">Staff</a></p>
-        </footer>
-    </div>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <div class="row footer">
+                    <div class="footer-top">
+                        <div class="social">
+                            <img src="~/images/Logo.png" alt="TSL Logo" height="50" width="200">
+                            <div class="social-links">
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-twitter-square"></i>
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </div>
+                        <div class="subscribe">
+                            <span>Subscribe</span>
+                            <span style="font-size: 1rem;">Subscribe to our newsletter so that you can be the <br />first to learn about our latest offers and promotions.</span>
+                            <div class="search-container">
+                                <input type="text" placeholder="Enter Email Address" name="search"><button class="subscribe-btn" type="submit">SUBSCRIBE</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                    <p>&copy; 2020 - TWINSKIN LONDON</p>
+                        </div>
+                </div>
+                <p><a href="Customers/Index">Staff</a></p>
+            </footer>
+        </div>
 
-    <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
-        </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
-    </environment>
+        <environment include="Development">
+            <script src="~/lib/jquery/dist/jquery.js"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+            <script src="~/js/site.js" asp-append-version="true"></script>
+        </environment>
+        <environment exclude="Development">
+            <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                    asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                    asp-fallback-test="window.jQuery"
+                    crossorigin="anonymous"
+                    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+                    asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                    asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                    crossorigin="anonymous"
+                    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"></script>
+            <script src="~/js/site.min.js" asp-append-version="true"></script>
+        </environment>
 
-    @RenderSection("Scripts", required: false)
+        @RenderSection("Scripts", required: false)
 </body>
 </html>
