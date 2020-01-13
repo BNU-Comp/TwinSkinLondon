@@ -6841,19 +6841,6 @@ button.close {
   }
 }
 
-.topnav {
-    width: 100%;
-    overflow: hidden;
-    display:flex;
-}
-
-    .topnav a {
-        align-items:flex-end;
-        color: black;
-        text-align: center;
-        text-decoration: none;
-        font-size: 17px;
-    }
 
         .topnav a:hover {
             color: #D2BE86;
