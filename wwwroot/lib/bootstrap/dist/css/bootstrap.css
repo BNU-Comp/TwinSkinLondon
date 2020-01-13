@@ -5,12 +5,13 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: "Avenir";
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
   margin: 0;
+  font-family: "Avenir";
 }
 article,
 aside,
@@ -3210,25 +3211,28 @@ fieldset[disabled] .btn-default.focus {
   color: #fff;
   background-color: #333;
 }
+
 .btn-primary {
-  color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+    color: #fff;
+    background-color: #D2BE86;
+    border-radius: 5px;
+    padding: 5px;
 }
+
 .btn-primary:focus,
 .btn-primary.focus {
-  color: #fff;
-  background-color: #286090;
-  border-color: #122b40;
+    color: #fff;
+    background-color: #286090;
+    border-color: #122b40;
 }
+
 .btn-primary:hover {
-  color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+    color: #fff;
+    background-color: #CCB87E;
+    text-decoration: none;
 }
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
+
+    .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
   color: #fff;
   background-color: #286090;
   background-image: none;
@@ -4240,10 +4244,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-right-radius: 0;
 }
 .navbar {
-  position: relative;
-  min-height: 50px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
 }
 @media (min-width: 768px) {
   .navbar {
@@ -4569,7 +4574,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: #D2BE86;
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
@@ -4665,11 +4670,12 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222;
-  border-color: #080808;
+    background-color: #fff;
+    display: flex;
+    border: 3px solid #D2BE86  ;
 }
 .navbar-inverse .navbar-brand {
-  color: #9d9d9d;
+  margin-bottom:5rem;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
@@ -4680,11 +4686,13 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #9d9d9d;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #9d9d9d;
+  align-content: center;
+  color: #000;
+  margin-top: 2.5rem;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #fff;
+  color: #D2BE86;
   background-color: transparent;
 }
 .navbar-inverse .navbar-nav > .active > a,
@@ -6312,6 +6320,7 @@ button.close {
 }
 .carousel {
   position: relative;
+  margin-top: 5rem;
 }
 .carousel-inner {
   position: relative;
@@ -6831,4 +6840,79 @@ button.close {
     display: none !important;
   }
 }
+
+.topnav {
+    width: 100%;
+    overflow: hidden;
+    display:flex;
+}
+
+    .topnav a {
+        align-items:flex-end;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        .topnav a:hover {
+            color: #D2BE86;
+        }
+
+        .navbar-logo {
+           align-items:flex-start;
+        }
+
+
+.topnav input[type=text] {
+    align-items: flex-end;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border-color: #D2BE86;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .topnav input[type=text] {
+        border: 1px solid #D2BE86;
+    }
+}
+
+.placeholder-wide {
+    background-color: grey;
+    padding-bottom: 100px;
+    margin-top: 20rem;
+}
+
+.placeholder {
+    background-color: grey;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: #D2BE86;
+    border: 1px solid #D2BE86;
+    padding: 1rem;
+} 
 /*# sourceMappingURL=bootstrap.css.map */

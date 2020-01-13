@@ -5,6 +5,13 @@ body {
     padding-bottom: 20px;
 }
 
+.adminbutton {
+    color: #fff;
+    background-color: #2d5eb5;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
