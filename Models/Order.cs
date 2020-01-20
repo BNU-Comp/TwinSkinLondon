@@ -26,6 +26,7 @@ namespace TwinSkinLondon.Models
         public decimal DeliveryCharge { get; set; }
 
         public int CustomerID { get; set; }
+        
         // Navigation
 
         public virtual Customer Customer { get; set; }
