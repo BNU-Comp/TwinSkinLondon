@@ -416,8 +416,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                    //OrderItemID = 1,
-                  OrderID = 1,
-                  ProductID = 1,
+                  OrderID = 1004,
+                  ProductID = 1002,
                   Price = 20,
                   Quantity = 2,
 
@@ -425,8 +425,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                    //OrderItemID = 2,
-                  OrderID = 2,
-                  ProductID = 2,
+                  OrderID = 1005,
+                  ProductID = 1003,
                   Price = 25,
                   Quantity = 1,
 
@@ -434,8 +434,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                    //OrderItemID = 3,
-                  OrderID = 3,
-                  ProductID = 3,
+                  OrderID = 1006,
+                  ProductID = 1004,
                   Price = 20,
                   Quantity = 2,
 
@@ -443,8 +443,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                    //OrderItemID = 4,
-                  OrderID = 4,
-                  ProductID = 4,
+                  OrderID = 1007,
+                  ProductID = 1005,
                   Price = 20,
                   Quantity = 2,
 
@@ -452,8 +452,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                    //OrderItemID = 5,
-                  OrderID = 5,
-                  ProductID = 5,
+                  OrderID = 1008,
+                  ProductID = 1006,
                   Price = 20,
                   Quantity = 2,
 
@@ -461,8 +461,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                    //OrderItemID = 6,
-                  OrderID = 6,
-                  ProductID = 6,
+                  OrderID = 1009,
+                  ProductID = 1007,
                   Price = 20,
                   Quantity = 2,
 
@@ -470,8 +470,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                    //OrderItemID = 7,
-                  OrderID = 7,
-                  ProductID = 7,
+                  OrderID = 1009,
+                  ProductID = 1008,
                   Price = 20,
                   Quantity = 2,
 
@@ -479,8 +479,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                    //OrderItemID = 8,
-                  OrderID = 8,
-                  ProductID = 8,
+                  OrderID = 1010,
+                  ProductID = 1009,
                   Price = 20,
                   Quantity = 2,
 
@@ -488,8 +488,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                    //OrderItemID = 9,
-                  OrderID = 9,
-                  ProductID = 9,
+                  OrderID = 1011,
+                  ProductID = 1010,
                   Price = 20,
                   Quantity = 2,
 
@@ -497,8 +497,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                    //OrderItemID = 10,
-                  OrderID = 10,
-                  ProductID = 10,
+                  OrderID = 1012,
+                  ProductID = 1010,
                   Price = 20,
                   Quantity = 2,
 
