@@ -273,7 +273,7 @@ namespace TwinSkinLondon.Data
                    "TwinSkin London’s Retinol and Collagen Cleanser is formulated to not only remove all of these impurities without making your skin dry but will get to work nourishing your skin with a tonne of anti - ageing ingredients helping to reverse the signs of ageing and leave your skin looking fantastic." +
                    "TwinSkin London’s Cleanser combines Retinol and Collagen and is packed with antioxidants reducing fine lines, wrinkles, crow’s feet and dark circles, giving your skin a natural, radiant glow, flawless complexion and an uplifting effect.",
                    Category = Categories.Facial,
-                   ImageURL = "",
+                   ImageURL = "Website Cleanser Bottle.jpg",
                    ProductPrice = 25,
                    VideoURL ="",
                    Quantity = 20,
@@ -287,7 +287,7 @@ namespace TwinSkinLondon.Data
                    "TwinSkin London’s anti-ageing Moisturiser acts as a shield between your skin and the environment ensuring that all the anti-ageing goodies you nourish your skin with will be sealed for maximum results. This makes it perfect for applying once you have cleansed your skin and your serum has fully absorbed." +
                    "TwinSkin London’s Moisturiser combines Retinol and Collagen and is packed with antioxidants reducing fine lines, wrinkles, crow’s feet and dark circles, giving your skin a natural, radiant glow, flawless complexion and an uplifting effect.",
                    Category = Categories.Facial,
-                   ImageURL = "",
+                   ImageURL = "Website Moisturiser Bottle.jpg",
                    ProductPrice = 30,
                    VideoURL ="",
                    Quantity = 20,
@@ -301,7 +301,7 @@ namespace TwinSkinLondon.Data
                    "It is formulated to specifically target reversing the signs of ageing with no compromise, providing your skin with optimal anti-ageing benefits. For maximum results apply your serum after cleansing and always seal your serum into the skin with your moisturiser." +
                    "TwinSkin London’s Serum combines Retinol and Collagen and is packed with antioxidants reducing fine lines, wrinkles, crow’s feet and dark circles, giving your skin a natural, radiant glow, flawless complexion and an uplifting effect.",
                    Category = Categories.Facial,
-                   ImageURL = "",
+                   ImageURL = "Website Serum Bottle.jpg",
                    ProductPrice = 20,
                    VideoURL ="",
                    Quantity = 20,
@@ -314,7 +314,7 @@ namespace TwinSkinLondon.Data
                    Description = "TwinSkin London’s Retinol and Collagen Bundle gives you the ultimate skincare routine for both preventing and reversing any signs of ageing.  Nourish your skin with Retinol, Collagen and tonnes of antioxidants while leaving your skin hydrated, blemish free and your complexion flawless." +
                    "TwinSkin London’s Cleanser, Serum and Moisturiser combine Retinol and Collagen and are packed with antioxidants reducing fine lines, wrinkles, crow’s feet and dark circles, giving your skin a natural, radiant glow, flawless complexion and an uplifting effect.",
                    Category = Categories.Facial,
-                   ImageURL = "",
+                   ImageURL = "Triple Pack - SAVE.jpg",
                    ProductPrice = 60,
                    VideoURL ="",
                    Quantity = 20,
@@ -323,11 +323,12 @@ namespace TwinSkinLondon.Data
                new Product
                {
                    //ProductID = 5,
-                   Name = "TwinSkin London Massage Wand",
-                   Description = "",
+                   Name = "TwinSkin London Eye Massage Wand",
+                   Description = "The eye beauty instrument enables nutrients to penetrate deep into the skin for better absorption." +
+                   "Intelligent sensor design: no manual switch, touch the product sensor area, the energy massage head contact with the skin, instant induction to start using.",
                    Category = Categories.Accessories,
-                   ImageURL = "dfjhsfsf",
-                   ProductPrice = 10,
+                   ImageURL = "Eye Wand.jpg",
+                   ProductPrice = 15,
                    VideoURL ="gdwisd",
                    Quantity = 20,
 
@@ -336,9 +337,9 @@ namespace TwinSkinLondon.Data
                {
                    //ProductID = 6,
                    Name = "Twin Skin London Carry Bag",
-                   Description = "",
+                   Description = "TwinSkin London's washbag has a zip top that keeps items safe and secure. The washbag has a waterproof lining and is a perfect size to store and transport all your essential toiletries. A simple white design.",
                    Category = Categories.Accessories,
-                   ImageURL = "",
+                   ImageURL = "Wash Bag.jpg",
                    ProductPrice = 15,
                    VideoURL ="",
                    Quantity = 20,
