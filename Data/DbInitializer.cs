@@ -862,9 +862,119 @@ namespace TwinSkinLondon.Data
                 {
                     new Review
                     {
+                       ReviewID=1,
+                       CustomerID=1,
+                       Date = new DateTime(2020, 05, 5),
+                       ProductID=1,
+                       StarRating=5,
+                       ReviewField="",
+                      
+                    },
+                     new Review
+                    {
+                       ReviewID=2,
+                       CustomerID=2,
+                       Date = new DateTime(2020, 05, 5),
+                       ProductID=2,
+                       StarRating=5,
+                       ReviewField="",
+                      
+                    },
+                      new Review
+                    {
+                       ReviewID=3,
+                       CustomerID=3,
+                       Date = new DateTime(2020, 05, 6),
+                       ProductID=3,
+                       StarRating=5,
+                       ReviewField="",
                        
                     },
+                       new Review
+                    {
+                       ReviewID=4,
+                       CustomerID=4,
+                       Date = new DateTime(2020, 05, 7),
+                       ProductID=4,
+                       StarRating=5,
+                       ReviewField="",
+                       //Product=
+                      // Customer=
+                    },
+                        new Review
+                    {
+                       ReviewID=5,
+                       CustomerID=5,
+                       Date = new DateTime(2020, 05, 8),
+                       ProductID=5,
+                       StarRating=5,
+                       ReviewField="",
+                       //Product=
+                      // Customer=
+                    },
+                         new Review
+                    {
+                       ReviewID=6,
+                       CustomerID=6,
+                       Date = new DateTime(2020, 05, 8),
+                       ProductID=6,
+                       StarRating=5,
+                       ReviewField="",
+                       //Product=
+                      // Customer=
+                    },
+                          new Review
+                    {
+                       ReviewID=7,
+                       CustomerID=7,
+                       Date = new DateTime(2020, 05, 9),
+                       ProductID=7,
+                       StarRating=5,
+                       ReviewField="",
+                       //Product=
+                      // Customer=
+                    },
+                           new Review
+                    {
+                       ReviewID=8,
+                       CustomerID=8,
+                       Date = new DateTime(2020, 05, 10),
+                       ProductID=8,
+                       StarRating=5,
+                       ReviewField="",
+                       //Product=
+                      // Customer=
+                    },
+                            new Review
+                    {
+                       ReviewID=9,
+                       CustomerID=9,
+                       Date = new DateTime(2020, 05, 11),
+                       ProductID=9,
+                       StarRating=5,
+                       ReviewField="",
+                       //Product=
+                      // Customer=
+                    },
+                             new Review
+                    {
+                       ReviewID=10,
+                       CustomerID=10,
+                       Date = new DateTime(2020, 05, 12),
+                       ProductID=10,
+                       StarRating=5,
+                       ReviewField="",
+                       //Product=
+                      // Customer=
+                   },
+
                 };
+                foreach (Review c in Reviews)
+                {
+                    context.Review.Add(c);
+                }
+
+                context.SaveChanges();
 
             }
         }
