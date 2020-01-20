@@ -21,10 +21,6 @@
         <div class="logo">
             <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand"><img src="~/images/Facebook-Logo.jpg" alt="TSL Logo" height="50" width="200"> </a>
         </div>
-        <div class="search-container">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </div>
         <div class="register">
             <a asp-area="Identity" asp-page="/Account/Login"><i class="far fa-user-circle"></i>Login</a>
         </div>
@@ -41,15 +37,18 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Collections">Collection</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About Us</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Reviews">Reviews</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a></li>
+                    <li><a asp-area="" asp-controller="Customers" asp-action="/Index">Customers</a></li>
+                    <li><a asp-area="" asp-controller="Addresses" asp-action="/Index">Addresses</a></li>
+                    <li><a asp-area="" asp-controller="PaymentCards" asp-action="/Index">PaymentCards</a></li>
+                    <li><a asp-area="" asp-controller="Products" asp-action="/Index">Products</a></li>
+                    <li><a asp-area="" asp-controller="Reviews" asp-action="/Index">Reviews</a></li>
+                    <li><a asp-area="" asp-controller="Messages" asp-action="/Index">Messages</a></li>
+                    <li><a asp-area="" asp-controller="Orders" asp-action="/Index">Orders</a></li>
                 </ul>
             </div>
         </div>
         </div>
+        <partial name="_LoginPartial" />
     </nav>
 
     <partial name="_CookieConsentPartial" />
@@ -58,7 +57,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2019 - TwinSkinLondon</p>
+            <p>&copy; 2020 - TwinSkinLondon</p>
         </footer>
     </div>
 
