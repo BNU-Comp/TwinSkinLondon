@@ -12,28 +12,26 @@ namespace TwinSkinLondon.Data
         {
             InitializeAddress(context);
             InitializePaymentCard(context);
-            InitializeCustomers(context);         
+            InitializeCustomers(context);
             InitializeProduct(context);
             InitializeOrder(context);
             InitializeOrderItem(context);
-
-
-            //InitializeMessage(context);
-            //InitializeReview(context);
+            InitializeMessage(context);
+            InitializeReview(context);
 
         }
 
 
         private static void InitializeCustomers(ApplicationDbContext context)
         {
-           if(context.Customers.Any())
+            if (context.Customers.Any())
             {
                 return;
             }
 
             var Customers = new Customer[]
             {
-               
+
                 new Customer
                {
                    FirstName= "Rebecca",
@@ -497,7 +495,7 @@ namespace TwinSkinLondon.Data
                 },
 
             };
-               foreach (OrderItem c in OrderItems)
+            foreach (OrderItem c in OrderItems)
             {
                 context.OrderItem.Add(c);
             }
@@ -516,7 +514,7 @@ namespace TwinSkinLondon.Data
 
             var Orders = new Order[]
             {
-              
+
                new Order
                {
                    OrderID = 2,
@@ -627,7 +625,7 @@ namespace TwinSkinLondon.Data
 
                 },
             };
-        
+
 
             foreach (Order c in Orders)
             {
@@ -639,7 +637,106 @@ namespace TwinSkinLondon.Data
 
         private static void InitializeMessage(ApplicationDbContext context)
         {
+            if (context.Message.Any())
+            {
+                return;
+            }
+
+            var Messages = new Message[]
+            {
+                new Message
+                {
+                    MessageID = 1,
+                    Date = new DateTime(2020, 05, 05),
+                    Subject = "Delivery",
+                    MessageField = "I ordered my product 2 days ago with next day delivery and it hasnt turned up",
+                    CustomerID = 1,
+                },
+                 new Message
+                {
+                    MessageID = 2,
+                    Date = new DateTime(2020, 05, 06),
+                    Subject = "Availability",
+                    MessageField = "I noticed this product is out of stock. When it is coming in?",
+                    CustomerID = 2,
+                },
+                  new Message
+                {
+                    MessageID = 3,
+                    Date = new DateTime(2020, 05, 07),
+                    Subject = "Product",
+                    MessageField = "I wanted if you are bringing in any new face masks?",
+                    CustomerID = 3,
+                },
+                   new Message
+                {
+                    MessageID = 4,
+                    Date = new DateTime(2020, 05, 08),
+                    Subject = "Allergies",
+                    MessageField = "I am allergic to nuts. Do you use wallnuts in your products?",
+                    CustomerID = 4,
+                },
+
+                     new Message
+                {
+                    MessageID = 5,
+                    Date = new DateTime(2020, 05, 09),
+                    Subject = "Delivery",
+                    MessageField = "How much are your delivery cost?",
+                    CustomerID = 5,
+                },
+                      new Message
+                {
+                    MessageID = 6,
+                    Date = new DateTime(2020, 05, 11),
+                    Subject = "Product",
+                    MessageField = "Why have you discontinued your Aloe-Vera Night Gel?",
+                    CustomerID = 6,
+                },
+                       new Message
+                       {
+                    MessageID = 7,
+                    Date = new DateTime(2020, 05, 11),
+                    Subject = "Order",
+                    MessageField = "I did not receive a confirmation for my order by email.",
+                    CustomerID = 7,
+                },
+                        new Message
+                {
+                    MessageID = 8,
+                    Date = new DateTime(2020, 05, 13),
+                    Subject = "Order",
+                    MessageField = "Are the delivery estimations on your website?",
+                    CustomerID = 8,
+                },
+                         new Message
+                {
+                    MessageID = 9,
+                    Date = new DateTime(2020, 05, 12),
+                    Subject = "Offers",
+                    MessageField = "Do you have any offers available on your websites?",
+                    CustomerID = 9,
+                },
+ new Message
+                {
+                    MessageID = 10,
+                    Date = new DateTime(2020, 05, 13),
+                    Subject = "Offers",
+                    MessageField = "Do you offers any student discounts?",
+                    CustomerID = 10,
+               },
+
+            };
+            foreach (Message c in Messages)
+            {
+                context.Message.Add(c);
+            }
+
+            context.SaveChanges();
+
         }
+
+
 
         private static void InitializePaymentCard(ApplicationDbContext context)
         {
@@ -754,8 +851,24 @@ namespace TwinSkinLondon.Data
 
         private static void InitializeReview(ApplicationDbContext context)
         {
+            {
 
+                if (context.Review.Any())
+                {
+                    return;
+                }
+
+                var Reviews = new Review[]
+                {
+                    new Review
+                    {
+                       
+                    },
+                };
+
+            }
         }
-    }
 
+    } 
 }
+

@@ -12,7 +12,7 @@ namespace TwinSkinLondon.Models
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString ="{0:yyyy-MM-dd}", ApplyFormatInEditMode =true)]
-        public int Date { get; set; }
+        public  DateTime Date { get; set; }
 
         [Required]
         [StringLength(50)]
