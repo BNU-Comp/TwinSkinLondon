@@ -17,7 +17,19 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="topnav">
+        <div class="logo">
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand"><img src="~/images/Facebook-Logo.jpg" alt="TSL Logo" height="50" width="200"> </a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="register">
+            <a asp-area="Identity" asp-page="/Account/Login"><i class="far fa-user-circle"></i>Login</a>
+        </div>
+    </div>
+    <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,20 +38,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">TwinSkinLondon</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Customers" asp-action="/Index">Customers</a></li>
-                    <li><a asp-area="" asp-controller="Addresses" asp-action="/Index">Addresses</a></li>
-                    <li><a asp-area="" asp-controller="PaymentCards" asp-action="/Index">PaymentCards</a></li>
-                    <li><a asp-area="" asp-controller="Products" asp-action="/Index">Products</a></li>
-                    <li><a asp-area="" asp-controller="Reviews" asp-action="/Index">Reviews</a></li>
-                    <li><a asp-area="" asp-controller="Messages" asp-action="/Index">Messages</a></li>
-                    <li><a asp-area="" asp-controller="Orders" asp-action="/Index">Orders</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Collections">Collection</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">About Us</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Reviews">Reviews</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a></li>
                 </ul>
-                <partial name="_LoginPartial" />
             </div>
+        </div>
         </div>
     </nav>
 
@@ -63,14 +72,12 @@
                 asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
                 asp-fallback-test="window.jQuery"
                 crossorigin="anonymous"
-                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
-        </script>
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
                 asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
                 asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
                 crossorigin="anonymous"
-                integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
-        </script>
+                integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"></script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
 
