@@ -16,10 +16,9 @@ namespace TwinSkinLondon.Data
             InitializeProduct(context);
             InitializeOrder(context);
             InitializeOrderItem(context);
-            
+
+
             //InitializeMessage(context);
-            //InitializeOrder(context);
-            //InitializeOrderItem(context);
             //InitializeReview(context);
 
         }
@@ -42,8 +41,8 @@ namespace TwinSkinLondon.Data
                    LastName= "Abbott",
                    ContactNumber= "07653217864",
                    EmailAddress= "Gunner_Wilkinson@demetris.com",
-                   PaymentCardID = 1
-                   //CustomerID= 1,
+                   PaymentCardID = 1,
+                   CustomerID= 1,
                },
                  new Customer
                {
@@ -52,8 +51,8 @@ namespace TwinSkinLondon.Data
                    LastName= "Elisha",
                    ContactNumber= "07653217863",
                    EmailAddress= "Eleazar@watson.tv",
-                   PaymentCardID = 2
-                   //CustomerID= 2,
+                   PaymentCardID = 2,
+                   CustomerID= 2,
                },
                   new Customer
                {
@@ -62,8 +61,8 @@ namespace TwinSkinLondon.Data
                    LastName= "Favian",
                    ContactNumber= "07653217862",
                    EmailAddress= "Fleta@verla.net",
-                   PaymentCardID = 3
-                   //CustomerID= 3,
+                   PaymentCardID = 3,
+                   CustomerID= 3,
                },
                    new Customer
                {
@@ -72,8 +71,8 @@ namespace TwinSkinLondon.Data
                    LastName= "Esmeralda",
                    ContactNumber= "07653217861",
                    EmailAddress= "Uriah.Hoeger@flo.net",
-                   PaymentCardID = 4
-                   //CustomerID= 4,
+                   PaymentCardID = 4,
+                   CustomerID= 4,
                },
                     new Customer
                {
@@ -82,8 +81,8 @@ namespace TwinSkinLondon.Data
                    LastName= "Runolfsdottir",
                    ContactNumber= "07653217860",
                    EmailAddress="Lavon@mckenna.name",
-                   PaymentCardID = 5
-                   //CustomerID= 5,
+                   PaymentCardID = 5,
+                   CustomerID= 5,
                },
                      new Customer
                {
@@ -92,8 +91,8 @@ namespace TwinSkinLondon.Data
                    LastName= "Jeanie",
                    ContactNumber= "07653217866",
                    EmailAddress= "Jeanie@wilford.ca",
-                   PaymentCardID = 6
-                   //CustomerID= 6,
+                   PaymentCardID = 6,
+                   CustomerID= 6,
                },
                       new Customer
                {
@@ -102,8 +101,8 @@ namespace TwinSkinLondon.Data
                    LastName= "Meredith",
                    ContactNumber= "07653217867",
                    EmailAddress="Letha_Spinka@kamryn.io",
-                   PaymentCardID = 7
-                   //CustomerID= 7,
+                   PaymentCardID = 7,
+                   CustomerID= 7,
                },
                        new Customer
                {
@@ -112,8 +111,8 @@ namespace TwinSkinLondon.Data
                    LastName= "Jones",
                    ContactNumber= "07653217868",
                    EmailAddress= "Amiya_Runte@billie.com",
-                   PaymentCardID = 8
-                   //CustomerID= 8,
+                   PaymentCardID = 8,
+                   CustomerID= 8,
                },
                         new Customer
                {
@@ -122,8 +121,8 @@ namespace TwinSkinLondon.Data
                    LastName= "Kadin",
                    ContactNumber= "07653217869",
                    EmailAddress= "Reed@adriana.co.uk",
-                   PaymentCardID = 9
-                   //CustomerID= 9,
+                   PaymentCardID = 9,
+                   CustomerID= 9,
                },
                new Customer
                {
@@ -132,8 +131,8 @@ namespace TwinSkinLondon.Data
                    LastName= "Cole",
                    ContactNumber= "07653217865",
                    EmailAddress= "Kasey@markus.tv",
-                   PaymentCardID = 10
-                   //CustomerID= 10,
+                   PaymentCardID = 10,
+                   CustomerID= 10,
                },
 
             };
@@ -157,7 +156,7 @@ namespace TwinSkinLondon.Data
             {
                new Address
                {
-                   //AddressID = 1,
+                   AddressID = 1,
                    HouseNumber = "7",
                    Street = "Park Lane",
                    County = Counties.Wiltshire,
@@ -166,7 +165,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   //AddressID = 2,
+                   AddressID = 2,
                    HouseNumber = "30A",
                    Street = "Powlmore Avenue",
                    County = Counties.Shropshire,
@@ -175,7 +174,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   //AddressID = 3,
+                   AddressID = 3,
                    HouseNumber = "Lord's Manor",
                    Street = "Mayfair",
                    County = Counties.CityofLondon,
@@ -184,7 +183,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   //AddressID = 4,
+                   AddressID = 4,
                    HouseNumber = "43",
                    Street = "Old Kent Road",
                    County = Counties.CityofLondon,
@@ -193,7 +192,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   //AddressID = 5,
+                   AddressID = 5,
                    HouseNumber = "103B",
                    Street = "Raven's Court",
                    County = Counties.Cornwall,
@@ -202,7 +201,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   //AddressID = 6,
+                   AddressID = 6,
                    HouseNumber = "9",
                    Street = "Blenheim Close",
                    County = Counties.Kent,
@@ -211,7 +210,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   //AddressID = 7,
+                   AddressID = 7,
                    HouseNumber = "221b",
                    Street = "Baker Street",
                    County = Counties.GreaterLondon,
@@ -220,7 +219,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   //AddressID = 8,
+                   AddressID = 8,
                    HouseNumber = "45",
                    Street = "Spooner Street",
                    County = Counties.Derbyshire,
@@ -229,7 +228,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   //AddressID = 9,
+                   AddressID = 9,
                    HouseNumber = "15",
                    Street = "Sesame Street",
                    County = Counties.NorthYorkshire,
@@ -238,7 +237,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   //AddressID = 10,
+                   AddressID = 10,
                    HouseNumber = "10",
                    Street = "Bond Street",
                    County = Counties.Kent,
@@ -267,7 +266,7 @@ namespace TwinSkinLondon.Data
             {
                new Product
                {
-                   //ProductID = 1,
+                   ProductID = 1,
                    Name = "Night Gel",
                    Description = "dffseb",
                    Category = Categories.Facial,
@@ -279,7 +278,7 @@ namespace TwinSkinLondon.Data
                },
                new Product
                {
-                   //ProductID = 2,
+                   ProductID = 2,
                    Name = "Night Gel",
                    Description = "dffseb",
                    Category = Categories.Facial,
@@ -291,7 +290,7 @@ namespace TwinSkinLondon.Data
                },
                new Product
                {
-                   //ProductID = 3,
+                   ProductID = 3,
                    Name = "Night Gel",
                    Description = "dffseb",
                    Category = Categories.Facial,
@@ -303,7 +302,7 @@ namespace TwinSkinLondon.Data
                },
                new Product
                {
-                   //ProductID = 4,
+                   ProductID = 4,
                    Name = "Night Gel",
                    Description = "dffseb",
                    Category = Categories.Facial,
@@ -315,7 +314,7 @@ namespace TwinSkinLondon.Data
                },
                new Product
                {
-                   //ProductID = 5,
+                   ProductID = 5,
                    Name = "Night Gel",
                    Description = "dffseb",
                    Category = Categories.Facial,
@@ -327,7 +326,7 @@ namespace TwinSkinLondon.Data
                },
                new Product
                {
-                   //ProductID = 6,
+                   ProductID = 6,
                    Name = "Night Gel",
                    Description = "dffseb",
                    Category = Categories.Facial,
@@ -339,7 +338,7 @@ namespace TwinSkinLondon.Data
                },
                new Product
                {
-                   //ProductID = 7,
+                   ProductID = 7,
                    Name = "Night Gel",
                    Description = "dffseb",
                    Category = Categories.Facial,
@@ -351,7 +350,7 @@ namespace TwinSkinLondon.Data
                },
                new Product
                {
-                   //ProductID = 8,
+                   ProductID = 8,
                    Name = "Night Gel",
                    Description = "dffseb",
                    Category = Categories.Facial,
@@ -363,7 +362,7 @@ namespace TwinSkinLondon.Data
                },
                new Product
                {
-                   //ProductID = 9,
+                   ProductID = 9,
                    Name = "Night Gel",
                    Description = "dffseb",
                    Category = Categories.Facial,
@@ -375,7 +374,7 @@ namespace TwinSkinLondon.Data
                },
                new Product
                {
-                   //ProductID = 10,
+                   ProductID = 10,
                    Name = "Night Gel",
                    Description = "dffseb",
                    Category = Categories.Facial,
@@ -408,7 +407,7 @@ namespace TwinSkinLondon.Data
             {
                new OrderItem
                {
-                   //OrderItemID = 1,
+                   OrderItemID = 1,
                   OrderID = 1,
                   ProductID = 1,
                   Price = 20,
@@ -417,7 +416,7 @@ namespace TwinSkinLondon.Data
                 },
                new OrderItem
                {
-                   //OrderItemID = 2,
+                   OrderItemID = 2,
                   OrderID = 2,
                   ProductID = 2,
                   Price = 25,
@@ -426,7 +425,7 @@ namespace TwinSkinLondon.Data
                 },
                new OrderItem
                {
-                   //OrderItemID = 3,
+                   OrderItemID = 3,
                   OrderID = 3,
                   ProductID = 3,
                   Price = 20,
@@ -435,7 +434,7 @@ namespace TwinSkinLondon.Data
                 },
                new OrderItem
                {
-                   //OrderItemID = 4,
+                   OrderItemID = 4,
                   OrderID = 4,
                   ProductID = 4,
                   Price = 20,
@@ -444,7 +443,7 @@ namespace TwinSkinLondon.Data
                 },
                new OrderItem
                {
-                   //OrderItemID = 5,
+                   OrderItemID = 5,
                   OrderID = 5,
                   ProductID = 5,
                   Price = 20,
@@ -453,7 +452,7 @@ namespace TwinSkinLondon.Data
                 },
                new OrderItem
                {
-                   //OrderItemID = 6,
+                   OrderItemID = 6,
                   OrderID = 6,
                   ProductID = 6,
                   Price = 20,
@@ -462,7 +461,7 @@ namespace TwinSkinLondon.Data
                 },
                new OrderItem
                {
-                   //OrderItemID = 7,
+                   OrderItemID = 7,
                   OrderID = 7,
                   ProductID = 7,
                   Price = 20,
@@ -471,7 +470,7 @@ namespace TwinSkinLondon.Data
                 },
                new OrderItem
                {
-                   //OrderItemID = 8,
+                   OrderItemID = 8,
                   OrderID = 8,
                   ProductID = 8,
                   Price = 20,
@@ -480,7 +479,7 @@ namespace TwinSkinLondon.Data
                 },
                new OrderItem
                {
-                   //OrderItemID = 9,
+                   OrderItemID = 9,
                   OrderID = 9,
                   ProductID = 9,
                   Price = 20,
@@ -489,7 +488,7 @@ namespace TwinSkinLondon.Data
                 },
                new OrderItem
                {
-                   //OrderItemID = 10,
+                   OrderItemID = 10,
                   OrderID = 10,
                   ProductID = 10,
                   Price = 20,
@@ -517,123 +516,112 @@ namespace TwinSkinLondon.Data
 
             var Orders = new Order[]
             {
+              
                new Order
                {
-                   //OrderID = 1,
+                   OrderID = 2,
                   DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
                   DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
                   Status = Status.Delivered,
-                  VAT = 20,
+                  VAT =20,
                   DeliveryCharge = 20,
                   CustomerID = 1,
 
                 },
                new Order
                {
-                   //OrderID = 2,
+                   OrderID = 3,
                   DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
                   DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
                   Status = Status.Delivered,
-                  VAT = 20,
+                  VAT =20,
                   DeliveryCharge = 20,
                   CustomerID = 2,
 
                 },
                new Order
                {
-                   //OrderID = 3,
+                  OrderID = 4,
                   DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
                   DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
                   Status = Status.Delivered,
-                  VAT = 20,
+                 VAT =20,
                   DeliveryCharge = 20,
                   CustomerID = 3,
 
                 },
                new Order
                {
-                   //OrderID = 4,
-                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
-                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
-                  Status = Status.Delivered,
-                  VAT = 20,
-                  DeliveryCharge = 20,
-                  CustomerID = 4,
-
-                },
-               new Order
-               {
-                   //OrderID = 4,
+                  OrderID = 4,
                   DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
                   DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
                  Status = Status.Delivered,
-                  VAT = 20,
+                 VAT =20,
                   DeliveryCharge = 20,
                   CustomerID = 4,
 
                 },
                new Order
                {
-                   //OrderID = 5,
+                  OrderID = 5,
                   DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
                   DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
                   Status = Status.Delivered,
-                  VAT = 20,
+                 VAT =20,
                   DeliveryCharge = 20,
-                  CustomerID = 5,
 
                 },
                new Order
                {
-                   //OrderID = 6,
+                  OrderID = 6,
                   DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
                   DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
                   Status = Status.Delivered,
-                  VAT = 20,
+                VAT =20,
                   DeliveryCharge = 20,
                   CustomerID = 6,
 
                 },
                new Order
                {
-                   //OrderID = 7,
+                  OrderID = 7,
                   DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
                   DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
                   Status = Status.Delivered,
-                  VAT = 20,
+                  VAT =20,
                   DeliveryCharge = 20,
                   CustomerID = 7,
 
                 },
                new Order
                {
-                   //OrderID = 8,
+                  OrderID = 8,
                   DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
                   DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
                   Status = Status.Delivered,
-                  VAT = 20,
+                  VAT =20,
                   DeliveryCharge = 20,
                   CustomerID = 8,
 
                 },
                new Order
                {
-                   //OrderID = 9,
+                  OrderID = 9,
                   DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
                   DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
                   Status = Status.Delivered,
-                  VAT = 20,
+                 VAT =20,
                   DeliveryCharge = 20,
                   CustomerID = 9,
 
                 },
                new Order
                {
-                   //OrderID = 10,
+                  OrderID = 10,
                   DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
                   DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
                   Status = Status.Delivered,
-                  VAT = 20,
+               VAT =20,
                   DeliveryCharge = 20,
                   CustomerID = 10,
 
