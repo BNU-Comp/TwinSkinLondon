@@ -262,124 +262,120 @@ namespace TwinSkinLondon.Data
 
             var Products = new Product[]
             {
+              new Product
+               {
+                   //ProductID = 1,
+                   Name = "TwinSkin London Cleanser",
+                   Description = "A Cleanser is the first stage of any skincare routine, essential for removing make-up, dead skin cells, oil, dirt and other pollutants from the skin.This helps to prevent skin blemishes such as acne breaking out." +
+                   "TwinSkin London’s Retinol and Collagen Cleanser is formulated to not only remove all of these impurities without making your skin dry but will get to work nourishing your skin with a tonne of anti - ageing ingredients helping to reverse the signs of ageing and leave your skin looking fantastic." +
+                   "TwinSkin London’s Cleanser combines Retinol and Collagen and is packed with antioxidants reducing fine lines, wrinkles, crow’s feet and dark circles, giving your skin a natural, radiant glow, flawless complexion and an uplifting effect.",
+                   Category = Categories.Facial,
+                   ImageURL = "Website Cleanser Bottle.jpg",
+                   ProductPrice = 25,
+                   VideoURL ="TwinSkin Video.mov",
+                   Quantity = 20,
+
+               },
                new Product
                {
-                   ProductID = 1,
-                   Name = "Night Gel",
-                   Description = "dffseb",
+                   //ProductID = 2,
+                   Name = "TwinSkin London Moisturiser",
+                   Description = "A Moisturiser contains additional occlusive, moisturising ingredients to that of a Serum which when used daily prevents both dry and oily skin, the main causes of skin acne and other blemishes. " +
+                   "TwinSkin London’s anti-ageing Moisturiser acts as a shield between your skin and the environment ensuring that all the anti-ageing goodies you nourish your skin with will be sealed for maximum results. This makes it perfect for applying once you have cleansed your skin and your serum has fully absorbed." +
+                   "TwinSkin London’s Moisturiser combines Retinol and Collagen and is packed with antioxidants reducing fine lines, wrinkles, crow’s feet and dark circles, giving your skin a natural, radiant glow, flawless complexion and an uplifting effect.",
                    Category = Categories.Facial,
-                   ImageURL = "dfjhsfsf",
-                   ProductPrice = 10,
-                   VideoURL ="gdwisd",
+                   ImageURL = "Website Moisturiser Bottle.jpg",
+                   ProductPrice = 30,
+                   VideoURL ="TwinSkin Video.mov",
+                   Quantity = 20,
+
+               },
+               new Product
+               {
+                   //ProductID = 3,
+                   Name = "TwinSkin London Serum",
+                   Description = "A Serum does not contain certain moisturising ingredients allowing the texture to be substantially thinner with much smaller molecules than that of a moisturiser. This allows the Serum to be absorbed into the skin much faster and deliver active anti-ageing ingredients deeper into your skin. " +
+                   "It is formulated to specifically target reversing the signs of ageing with no compromise, providing your skin with optimal anti-ageing benefits. For maximum results apply your serum after cleansing and always seal your serum into the skin with your moisturiser." +
+                   "TwinSkin London’s Serum combines Retinol and Collagen and is packed with antioxidants reducing fine lines, wrinkles, crow’s feet and dark circles, giving your skin a natural, radiant glow, flawless complexion and an uplifting effect.",
+                   Category = Categories.Facial,
+                   ImageURL = "Website Serum Bottle.jpg",
+                   ProductPrice = 20,
+                   VideoURL ="TwinSkin Video.mov",
+                   Quantity = 20,
+
+               },
+               new Product
+               {
+                   //ProductID = 4,
+                   Name = "TwinSkin London Skin Care Bundle",
+                   Description = "TwinSkin London’s Retinol and Collagen Bundle gives you the ultimate skincare routine for both preventing and reversing any signs of ageing.  Nourish your skin with Retinol, Collagen and tonnes of antioxidants while leaving your skin hydrated, blemish free and your complexion flawless." +
+                   "TwinSkin London’s Cleanser, Serum and Moisturiser combine Retinol and Collagen and are packed with antioxidants reducing fine lines, wrinkles, crow’s feet and dark circles, giving your skin a natural, radiant glow, flawless complexion and an uplifting effect.",
+                   Category = Categories.Facial,
+                   ImageURL = "Triple Pack - SAVE.jpg",
+                   ProductPrice = 60,
+                   VideoURL ="TwinSkin Video.mov",
+                   Quantity = 20,
+
+               },
+               new Product
+               {
+                   //ProductID = 5,
+                   Name = "TwinSkin London Eye Massage Wand",
+                   Description = "The eye beauty instrument enables nutrients to penetrate deep into the skin for better absorption." +
+                   "Intelligent sensor design: no manual switch, touch the product sensor area, the energy massage head contact with the skin, instant induction to start using.",
+                   Category = Categories.Accessories,
+                   ImageURL = "Eye Wand.jpg",
+                   ProductPrice = 15,
+                   VideoURL ="TwinSkin Video.mov",
+                   Quantity = 20,
+
+               },
+               new Product
+               {
+                   //ProductID = 6,
+                   Name = "TwinSkin London Carry Bag",
+                   Description = "TwinSkin London's washbag has a zip top that keeps items safe and secure. The washbag has a waterproof lining and is a perfect size to store and transport all your essential toiletries. A simple white design.",
+                   Category = Categories.Accessories,
+                   ImageURL = "Wash Bag.jpg",
+                   ProductPrice = 15,
+                   VideoURL ="TwinSkin Video.mov",
+                   Quantity = 20,
+
+               },
+               new Product
+               {
+                   //ProductID = 7,
+                   Name = "TwinSkin London Serum & Cleanser Kit",
+                   Description = "TwinSkin London’s Retinol and Collagen Bundle gives you the ultimate skincare routine for both preventing and reversing any signs of ageing.  Nourish your skin with Retinol, Collagen and tonnes of antioxidants while leaving your skin hydrated, blemish free and your complexion flawless. TwinSkin London’s Cleanser and Serum combine Retinol and Collagen and are packed with antioxidants reducing fine lines, wrinkles, crow’s feet and dark circles, giving your skin a natural, radiant glow, flawless complexion and an uplifting effect.",
+                   Category = Categories.Facial,
+                   ImageURL = "Cleanser and serum Bundle.jpg",
+                   ProductPrice = 40,
+                   VideoURL ="TwinSkin Video.mov",
                    Quantity = 5,
 
                },
                new Product
                {
-                   ProductID = 2,
-                   Name = "Night Gel",
-                   Description = "dffseb",
-                   Category = Categories.Facial,
-                   ImageURL = "dfjhsfsf",
-                   ProductPrice = 10,
-                   VideoURL ="gdwisd",
-                   Quantity = 5,
+                   //ProductID = 8,
+                   Name = "TwinSkin London Accessory Kit",
+                   Description = "All your skin care accesory needs in one complete bundle",
+                   Category = Categories.Accessories,
+                   ImageURL = "Accessory Bundle.jpg",
+                   ProductPrice = 25,
+                   VideoURL ="TwinSkin Video.mov",
+                   Quantity = 20,
 
                },
                new Product
                {
-                   ProductID = 3,
-                   Name = "Night Gel",
-                   Description = "dffseb",
+                   //ProductID = 9,
+                   Name = "TwinSKin London Skin Care Package",
+                   Description = "Combine all of TwinSkin Londons Product in our complete package. Containing something for all your skin care needs, the perfect applicaticator and a need and stylish bag to carry all your skin care products in.",
                    Category = Categories.Facial,
-                   ImageURL = "dfjhsfsf",
-                   ProductPrice = 10,
-                   VideoURL ="gdwisd",
-                   Quantity = 5,
-
-               },
-               new Product
-               {
-                   ProductID = 4,
-                   Name = "Night Gel",
-                   Description = "dffseb",
-                   Category = Categories.Facial,
-                   ImageURL = "dfjhsfsf",
-                   ProductPrice = 10,
-                   VideoURL ="gdwisd",
-                   Quantity = 5,
-
-               },
-               new Product
-               {
-                   ProductID = 5,
-                   Name = "Night Gel",
-                   Description = "dffseb",
-                   Category = Categories.Facial,
-                   ImageURL = "dfjhsfsf",
-                   ProductPrice = 10,
-                   VideoURL ="gdwisd",
-                   Quantity = 5,
-
-               },
-               new Product
-               {
-                   ProductID = 6,
-                   Name = "Night Gel",
-                   Description = "dffseb",
-                   Category = Categories.Facial,
-                   ImageURL = "dfjhsfsf",
-                   ProductPrice = 10,
-                   VideoURL ="gdwisd",
-                   Quantity = 5,
-
-               },
-               new Product
-               {
-                   ProductID = 7,
-                   Name = "Night Gel",
-                   Description = "dffseb",
-                   Category = Categories.Facial,
-                   ImageURL = "dfjhsfsf",
-                   ProductPrice = 10,
-                   VideoURL ="gdwisd",
-                   Quantity = 5,
-
-               },
-               new Product
-               {
-                   ProductID = 8,
-                   Name = "Night Gel",
-                   Description = "dffseb",
-                   Category = Categories.Facial,
-                   ImageURL = "dfjhsfsf",
-                   ProductPrice = 10,
-                   VideoURL ="gdwisd",
-                   Quantity = 5,
-
-               },
-               new Product
-               {
-                   ProductID = 9,
-                   Name = "Night Gel",
-                   Description = "dffseb",
-                   Category = Categories.Facial,
-                   ImageURL = "dfjhsfsf",
-                   ProductPrice = 10,
-                   VideoURL ="gdwisd",
-                   Quantity = 5,
-
-               },
-               new Product
-               {
-                   ProductID = 10,
-                   Name = "Night Gel",
-                   Description = "dffseb",
-                   Category = Categories.Facial,
-                   ImageURL = "dfjhsfsf",
-                   ProductPrice = 10,
-                   VideoURL ="gdwisd",
-                   Quantity = 5,
+                   ImageURL = "Complete Budle.jpg",
+                   ProductPrice = 90,
+                   VideoURL ="TwinSkin Video.mov",
+                   Quantity = 20,
 
                }
 
@@ -405,90 +401,90 @@ namespace TwinSkinLondon.Data
             {
                new OrderItem
                {
-                   OrderItemID = 1,
+                  // OrderItemID = 1,
                   OrderID = 1,
-                  ProductID = 1,
-                  Price = 20,
+                  ProductID = 11,
+                  Price = 25,
                   Quantity = 2,
 
                 },
                new OrderItem
                {
-                   OrderItemID = 2,
+                  // OrderItemID = 2,
                   OrderID = 2,
-                  ProductID = 2,
-                  Price = 25,
+                  ProductID = 12,
+                  Price = 30,
                   Quantity = 1,
 
                 },
                new OrderItem
                {
-                   OrderItemID = 3,
+                  // OrderItemID = 3,
                   OrderID = 3,
-                  ProductID = 3,
+                  ProductID = 13,
                   Price = 20,
                   Quantity = 2,
 
                 },
                new OrderItem
                {
-                   OrderItemID = 4,
+                  // OrderItemID = 4,
                   OrderID = 4,
-                  ProductID = 4,
-                  Price = 20,
+                  ProductID = 14,
+                  Price = 60,
                   Quantity = 2,
 
                 },
                new OrderItem
                {
-                   OrderItemID = 5,
+                  // OrderItemID = 5,
                   OrderID = 5,
-                  ProductID = 5,
-                  Price = 20,
+                  ProductID = 15,
+                  Price = 15,
                   Quantity = 2,
 
                 },
                new OrderItem
                {
-                   OrderItemID = 6,
+                  // OrderItemID = 6,
                   OrderID = 6,
-                  ProductID = 6,
-                  Price = 20,
+                  ProductID = 16,
+                  Price = 15,
                   Quantity = 2,
 
                 },
                new OrderItem
                {
-                   OrderItemID = 7,
+                  // OrderItemID = 7,
                   OrderID = 7,
-                  ProductID = 7,
-                  Price = 20,
+                  ProductID = 17,
+                  Price = 40,
                   Quantity = 2,
 
                 },
                new OrderItem
                {
-                   OrderItemID = 8,
+                  // OrderItemID = 8,
                   OrderID = 8,
-                  ProductID = 8,
-                  Price = 20,
+                  ProductID = 18,
+                  Price = 25,
                   Quantity = 2,
 
                 },
                new OrderItem
                {
-                   OrderItemID = 9,
+                  // OrderItemID = 9,
                   OrderID = 9,
-                  ProductID = 9,
-                  Price = 20,
+                  ProductID = 19,
+                  Price = 90,
                   Quantity = 2,
 
                 },
                new OrderItem
                {
-                   OrderItemID = 10,
+                  // OrderItemID = 10,
                   OrderID = 10,
-                  ProductID = 10,
+                  ProductID = 20,
                   Price = 20,
                   Quantity = 2,
 
@@ -517,7 +513,7 @@ namespace TwinSkinLondon.Data
 
                new Order
                {
-                   OrderID = 2,
+                  //OrderID = 2,
                   DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
                   DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
                   Status = Status.Delivered,
@@ -528,22 +524,22 @@ namespace TwinSkinLondon.Data
                 },
                new Order
                {
-                   OrderID = 3,
-                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
-                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
-                  Status = Status.Delivered,
+                  //OrderID = 3,
+                  DateOrdered = new DateTime(2020, 5, 2, 8, 30, 34),
+                  DateDelivered = new DateTime(2020, 5, 6, 10, 20, 36),
+                  Status = Status.InProgress,
                   VAT =20,
-                  DeliveryCharge = 20,
+                  DeliveryCharge = 10,
                   CustomerID = 2,
 
                 },
                new Order
                {
                   OrderID = 4,
-                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
-                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
-                  Status = Status.Delivered,
-                 VAT =20,
+                  DateOrdered = new DateTime(2020, 5, 3, 7, 21, 50),
+                  DateDelivered = new DateTime(2020, 5, 7, 5, 14, 46),
+                  Status = Status.Dispatched,
+                  VAT =20,
                   DeliveryCharge = 20,
                   CustomerID = 3,
 
@@ -551,76 +547,78 @@ namespace TwinSkinLondon.Data
                new Order
                {
                   OrderID = 4,
-                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
-                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
+                  DateOrdered = new DateTime(2020, 5, 4, 5, 10, 13),
+                  DateDelivered = new DateTime(2020, 5, 7, 6, 45, 33),
                  Status = Status.Delivered,
                  VAT =20,
-                  DeliveryCharge = 20,
+                  DeliveryCharge = 7,
                   CustomerID = 4,
 
                 },
                new Order
                {
                   OrderID = 5,
-                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
-                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
+                  DateOrdered = new DateTime(2020, 5, 4, 12, 23, 32),
+                  DateDelivered = new DateTime(2020, 5, 7, 8, 17, 19),
                   Status = Status.Delivered,
-                 VAT =20,
-                  DeliveryCharge = 20,
+                  VAT =20,
+                  DeliveryCharge = 14,
+                   CustomerID = 5,
+
 
                 },
                new Order
                {
                   OrderID = 6,
-                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
-                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
+                  DateOrdered = new DateTime(2020, 5, 5, 5, 56, 12),
+                  DateDelivered = new DateTime(2020, 5, 8, 10, 34, 15),
                   Status = Status.Delivered,
                 VAT =20,
-                  DeliveryCharge = 20,
+                  DeliveryCharge = 10,
                   CustomerID = 6,
 
                 },
                new Order
                {
                   OrderID = 7,
-                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
-                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
+                  DateOrdered = new DateTime(2020, 5, 6, 4, 48, 22),
+                  DateDelivered = new DateTime(2020, 5, 9, 11, 45, 24),
                   Status = Status.Delivered,
                   VAT =20,
-                  DeliveryCharge = 20,
+                  DeliveryCharge = 15,
                   CustomerID = 7,
 
                 },
                new Order
                {
                   OrderID = 8,
-                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
-                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
+                  DateOrdered = new DateTime(2020, 5, 6, 8, 17, 47),
+                  DateDelivered = new DateTime(2020, 5, 9, 12, 45, 52),
                   Status = Status.Delivered,
                   VAT =20,
-                  DeliveryCharge = 20,
+                  DeliveryCharge = 13,
                   CustomerID = 8,
 
                 },
                new Order
                {
                   OrderID = 9,
-                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
-                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
+                  DateOrdered = new DateTime(2020, 5, 7, 5, 34, 18),
+                  DateDelivered = new DateTime(2020, 5, 10, 7, 45, 16),
                   Status = Status.Delivered,
                  VAT =20,
-                  DeliveryCharge = 20,
+                  DeliveryCharge = 8,
                   CustomerID = 9,
 
                 },
                new Order
                {
                   OrderID = 10,
-                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
-                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
+                  DateOrdered = new DateTime(2020, 5, 8, 7, 33, 13),
+                  DateDelivered = new DateTime(2020, 5, 11, 9, 29, 19),
                   Status = Status.Delivered,
                VAT =20,
-                  DeliveryCharge = 20,
+                  DeliveryCharge = 16,
                   CustomerID = 10,
 
                 },
@@ -862,110 +860,103 @@ namespace TwinSkinLondon.Data
                 {
                     new Review
                     {
-                       ReviewID=1,
+                      // ReviewID=1,
                        CustomerID=1,
                        Date = new DateTime(2020, 05, 5),
-                       ProductID=1,
-                       StarRating=5,
-                       ReviewField="",
+                       ProductID=11,
+                       StarRating=4,
+                       ReviewField="This product was amazing. Great for my skin tone.",
                       
                     },
                      new Review
                     {
-                       ReviewID=2,
+                      // ReviewID=2,
                        CustomerID=2,
-                       Date = new DateTime(2020, 05, 5),
-                       ProductID=2,
-                       StarRating=5,
-                       ReviewField="",
+                       Date = new DateTime(2020, 05, 8),
+                       ProductID=12,
+                       StarRating=3,
+                       ReviewField="The product is worth the money but the parcel did arrived one day late.",
                       
                     },
                       new Review
                     {
-                       ReviewID=3,
+                      // ReviewID=3,
                        CustomerID=3,
-                       Date = new DateTime(2020, 05, 6),
-                       ProductID=3,
+                       Date = new DateTime(2020, 05, 7),
+                       ProductID=13,
                        StarRating=5,
-                       ReviewField="",
+                       ReviewField="Loved this product. Amazing.",
                        
                     },
                        new Review
                     {
-                       ReviewID=4,
+                      // ReviewID=4,
                        CustomerID=4,
-                       Date = new DateTime(2020, 05, 7),
-                       ProductID=4,
-                       StarRating=5,
-                       ReviewField="",
-                       //Product=
-                      // Customer=
+                       Date = new DateTime(2020, 05, 9),
+                       ProductID=14,
+                       StarRating=1,
+                       ReviewField="The product did not do well for my skin. It left my skin irritated.",
+                       
                     },
                         new Review
                     {
-                       ReviewID=5,
+                       //ReviewID=5,
                        CustomerID=5,
-                       Date = new DateTime(2020, 05, 8),
-                       ProductID=5,
+                       Date = new DateTime(2020, 05, 6),
+                       ProductID=15,
                        StarRating=5,
-                       ReviewField="",
-                       //Product=
-                      // Customer=
+                       ReviewField="I ordered a whole skin care routine it has match my lifestyle perfectly.",
+                       
                     },
                          new Review
                     {
-                       ReviewID=6,
+                      // ReviewID=6,
                        CustomerID=6,
                        Date = new DateTime(2020, 05, 8),
-                       ProductID=6,
-                       StarRating=5,
-                       ReviewField="",
-                       //Product=
-                      // Customer=
+                       ProductID=16,
+                       StarRating=3,
+                       ReviewField="The price is perfect for what you get.",
+                    
                     },
                           new Review
                     {
-                       ReviewID=7,
+                      // ReviewID=7,
                        CustomerID=7,
                        Date = new DateTime(2020, 05, 9),
-                       ProductID=7,
-                       StarRating=5,
-                       ReviewField="",
-                       //Product=
-                      // Customer=
+                       ProductID=17,
+                       StarRating=4,
+                       ReviewField="Not have one problem with this brand, would recomend.",
+                     
                     },
                            new Review
                     {
-                       ReviewID=8,
+                      // ReviewID=8,
                        CustomerID=8,
                        Date = new DateTime(2020, 05, 10),
-                       ProductID=8,
-                       StarRating=5,
-                       ReviewField="",
-                       //Product=
-                      // Customer=
+                       ProductID=18,
+                       StarRating=2,
+                       ReviewField="This is a terrible product.",
+                      
                     },
                             new Review
                     {
-                       ReviewID=9,
+                       //ReviewID=9,
                        CustomerID=9,
                        Date = new DateTime(2020, 05, 11),
-                       ProductID=9,
+                       ProductID=19,
                        StarRating=5,
-                       ReviewField="",
-                       //Product=
-                      // Customer=
+                       ReviewField="Love it, love it, love it.",
+                      
                     },
                              new Review
                     {
-                       ReviewID=10,
+                      // ReviewID=10,
                        CustomerID=10,
                        Date = new DateTime(2020, 05, 12),
-                       ProductID=10,
-                       StarRating=5,
-                       ReviewField="",
-                       //Product=
-                      // Customer=
+                       ProductID=20,
+                       StarRating=2,
+                       ReviewField="We don't get much for your money.",
+                      
                    },
 
                 };
