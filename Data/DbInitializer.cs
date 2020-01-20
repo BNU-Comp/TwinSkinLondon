@@ -268,73 +268,80 @@ namespace TwinSkinLondon.Data
                new Product
                {
                    //ProductID = 1,
-                   Name = "Night Gel",
-                   Description = "dffseb",
+                   Name = "TwinSkin London Cleanser",
+                   Description = "A Cleanser is the first stage of any skincare routine, essential for removing make-up, dead skin cells, oil, dirt and other pollutants from the skin.This helps to prevent skin blemishes such as acne breaking out." +
+                   "TwinSkin London’s Retinol and Collagen Cleanser is formulated to not only remove all of these impurities without making your skin dry but will get to work nourishing your skin with a tonne of anti - ageing ingredients helping to reverse the signs of ageing and leave your skin looking fantastic." +
+                   "TwinSkin London’s Cleanser combines Retinol and Collagen and is packed with antioxidants reducing fine lines, wrinkles, crow’s feet and dark circles, giving your skin a natural, radiant glow, flawless complexion and an uplifting effect.",
                    Category = Categories.Facial,
-                   ImageURL = "dfjhsfsf",
-                   ProductPrice = 10,
-                   VideoURL ="gdwisd",
-                   Quantity = 5,
+                   ImageURL = "",
+                   ProductPrice = 25,
+                   VideoURL ="",
+                   Quantity = 20,
 
                },
                new Product
                {
                    //ProductID = 2,
-                   Name = "Night Gel",
-                   Description = "dffseb",
+                   Name = "TwinSkin London Moisturiser",
+                   Description = "A Moisturiser contains additional occlusive, moisturising ingredients to that of a Serum which when used daily prevents both dry and oily skin, the main causes of skin acne and other blemishes. " +
+                   "TwinSkin London’s anti-ageing Moisturiser acts as a shield between your skin and the environment ensuring that all the anti-ageing goodies you nourish your skin with will be sealed for maximum results. This makes it perfect for applying once you have cleansed your skin and your serum has fully absorbed." +
+                   "TwinSkin London’s Moisturiser combines Retinol and Collagen and is packed with antioxidants reducing fine lines, wrinkles, crow’s feet and dark circles, giving your skin a natural, radiant glow, flawless complexion and an uplifting effect.",
                    Category = Categories.Facial,
-                   ImageURL = "dfjhsfsf",
-                   ProductPrice = 10,
-                   VideoURL ="gdwisd",
-                   Quantity = 5,
+                   ImageURL = "",
+                   ProductPrice = 30,
+                   VideoURL ="",
+                   Quantity = 20,
 
                },
                new Product
                {
                    //ProductID = 3,
-                   Name = "Night Gel",
-                   Description = "dffseb",
+                   Name = "TwinSkin London Serum",
+                   Description = "A Serum does not contain certain moisturising ingredients allowing the texture to be substantially thinner with much smaller molecules than that of a moisturiser. This allows the Serum to be absorbed into the skin much faster and deliver active anti-ageing ingredients deeper into your skin. " +
+                   "It is formulated to specifically target reversing the signs of ageing with no compromise, providing your skin with optimal anti-ageing benefits. For maximum results apply your serum after cleansing and always seal your serum into the skin with your moisturiser." +
+                   "TwinSkin London’s Serum combines Retinol and Collagen and is packed with antioxidants reducing fine lines, wrinkles, crow’s feet and dark circles, giving your skin a natural, radiant glow, flawless complexion and an uplifting effect.",
                    Category = Categories.Facial,
-                   ImageURL = "dfjhsfsf",
-                   ProductPrice = 10,
-                   VideoURL ="gdwisd",
-                   Quantity = 5,
+                   ImageURL = "",
+                   ProductPrice = 20,
+                   VideoURL ="",
+                   Quantity = 20,
 
                },
                new Product
                {
                    //ProductID = 4,
-                   Name = "Night Gel",
-                   Description = "dffseb",
+                   Name = "TwinSkin London Skin Care Bundle",
+                   Description = "TwinSkin London’s Retinol and Collagen Bundle gives you the ultimate skincare routine for both preventing and reversing any signs of ageing.  Nourish your skin with Retinol, Collagen and tonnes of antioxidants while leaving your skin hydrated, blemish free and your complexion flawless." +
+                   "TwinSkin London’s Cleanser, Serum and Moisturiser combine Retinol and Collagen and are packed with antioxidants reducing fine lines, wrinkles, crow’s feet and dark circles, giving your skin a natural, radiant glow, flawless complexion and an uplifting effect.",
                    Category = Categories.Facial,
-                   ImageURL = "dfjhsfsf",
-                   ProductPrice = 10,
-                   VideoURL ="gdwisd",
-                   Quantity = 5,
+                   ImageURL = "",
+                   ProductPrice = 60,
+                   VideoURL ="",
+                   Quantity = 20,
 
                },
                new Product
                {
                    //ProductID = 5,
-                   Name = "Night Gel",
-                   Description = "dffseb",
-                   Category = Categories.Facial,
+                   Name = "TwinSkin London Massage Wand",
+                   Description = "",
+                   Category = Categories.Accessories,
                    ImageURL = "dfjhsfsf",
                    ProductPrice = 10,
                    VideoURL ="gdwisd",
-                   Quantity = 5,
+                   Quantity = 20,
 
                },
                new Product
                {
                    //ProductID = 6,
-                   Name = "Night Gel",
-                   Description = "dffseb",
-                   Category = Categories.Facial,
-                   ImageURL = "dfjhsfsf",
-                   ProductPrice = 10,
-                   VideoURL ="gdwisd",
-                   Quantity = 5,
+                   Name = "Twin Skin London Carry Bag",
+                   Description = "",
+                   Category = Categories.Accessories,
+                   ImageURL = "",
+                   ProductPrice = 15,
+                   VideoURL ="",
+                   Quantity = 20,
 
                },
                new Product

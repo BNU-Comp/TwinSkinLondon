@@ -14,7 +14,7 @@ namespace TwinSkinLondon.Models
         [StringLength(50)]
         public string Name { get; set; }
 
-        [StringLength(500), DataType(DataType.MultilineText)]
+        [StringLength(1000), DataType(DataType.MultilineText)]
         public string Description { get; set; }
 
         public Categories  Category { get; set; }
@@ -41,6 +41,7 @@ namespace TwinSkinLondon.Models
     {
         Facial,
         Body,
-        Hair
+        Hair,
+        Accessories
     }
 }
