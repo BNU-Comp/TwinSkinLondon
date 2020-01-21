@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TwinSkinLondon.Data;
 
 namespace TwinSkinLondon.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200121140054_update6")]
+    partial class update6
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -247,7 +249,7 @@ namespace TwinSkinLondon.Data.Migrations
 
                     b.Property<int>("CustomerID");
 
-                    b.Property<DateTime>("Date");
+                    b.Property<DateTime>("DatePublish");
 
                     b.Property<string>("MessageField")
                         .IsRequired()
@@ -272,7 +274,9 @@ namespace TwinSkinLondon.Data.Migrations
 
                     b.Property<int>("CustomerID");
 
-                    b.Property<DateTime>("Date");
+                    b.Property<DateTime>("DateDelivered");
+
+                    b.Property<DateTime>("DateOrdered");
 
                     b.Property<decimal>("DeliveryCharge");
 

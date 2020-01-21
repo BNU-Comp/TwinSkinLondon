@@ -40,7 +40,7 @@ namespace TwinSkinLondon.Data
                    ContactNumber= "07653217864",
                    EmailAddress= "Gunner_Wilkinson@demetris.com",
                    PaymentCardID = 1,
-                   CustomerID= 1,
+                   //CustomerID= 1,
                },
                  new Customer
                {
@@ -50,7 +50,7 @@ namespace TwinSkinLondon.Data
                    ContactNumber= "07653217863",
                    EmailAddress= "Eleazar@watson.tv",
                    PaymentCardID = 2,
-                   CustomerID= 2,
+                   //CustomerID= 2,
                },
                   new Customer
                {
@@ -60,7 +60,7 @@ namespace TwinSkinLondon.Data
                    ContactNumber= "07653217862",
                    EmailAddress= "Fleta@verla.net",
                    PaymentCardID = 3,
-                   CustomerID= 3,
+                   //CustomerID= 3,
                },
                    new Customer
                {
@@ -70,7 +70,7 @@ namespace TwinSkinLondon.Data
                    ContactNumber= "07653217861",
                    EmailAddress= "Uriah.Hoeger@flo.net",
                    PaymentCardID = 4,
-                   CustomerID= 4,
+                   //CustomerID= 4,
                },
                     new Customer
                {
@@ -80,7 +80,7 @@ namespace TwinSkinLondon.Data
                    ContactNumber= "07653217860",
                    EmailAddress="Lavon@mckenna.name",
                    PaymentCardID = 5,
-                   CustomerID= 5,
+                   //CustomerID= 5,
                },
                      new Customer
                {
@@ -90,7 +90,7 @@ namespace TwinSkinLondon.Data
                    ContactNumber= "07653217866",
                    EmailAddress= "Jeanie@wilford.ca",
                    PaymentCardID = 6,
-                   CustomerID= 6,
+                   //CustomerID= 6,
                },
                       new Customer
                {
@@ -100,7 +100,7 @@ namespace TwinSkinLondon.Data
                    ContactNumber= "07653217867",
                    EmailAddress="Letha_Spinka@kamryn.io",
                    PaymentCardID = 7,
-                   CustomerID= 7,
+                   //CustomerID= 7,
                },
                        new Customer
                {
@@ -110,7 +110,7 @@ namespace TwinSkinLondon.Data
                    ContactNumber= "07653217868",
                    EmailAddress= "Amiya_Runte@billie.com",
                    PaymentCardID = 8,
-                   CustomerID= 8,
+                   //CustomerID= 8,
                },
                         new Customer
                {
@@ -120,7 +120,7 @@ namespace TwinSkinLondon.Data
                    ContactNumber= "07653217869",
                    EmailAddress= "Reed@adriana.co.uk",
                    PaymentCardID = 9,
-                   CustomerID= 9,
+                   //CustomerID= 9,
                },
                new Customer
                {
@@ -130,7 +130,7 @@ namespace TwinSkinLondon.Data
                    ContactNumber= "07653217865",
                    EmailAddress= "Kasey@markus.tv",
                    PaymentCardID = 10,
-                   CustomerID= 10,
+                   //CustomerID= 10,
                },
 
             };
@@ -154,7 +154,7 @@ namespace TwinSkinLondon.Data
             {
                new Address
                {
-                   AddressID = 1,
+                   //AddressID = 1,
                    HouseNumber = "7",
                    Street = "Park Lane",
                    County = Counties.Wiltshire,
@@ -163,7 +163,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   AddressID = 2,
+                   //AddressID = 2,
                    HouseNumber = "30A",
                    Street = "Powlmore Avenue",
                    County = Counties.Shropshire,
@@ -172,7 +172,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   AddressID = 3,
+                   //AddressID = 3,
                    HouseNumber = "Lord's Manor",
                    Street = "Mayfair",
                    County = Counties.CityofLondon,
@@ -181,7 +181,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   AddressID = 4,
+                  // AddressID = 4,
                    HouseNumber = "43",
                    Street = "Old Kent Road",
                    County = Counties.CityofLondon,
@@ -190,7 +190,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   AddressID = 5,
+                  // AddressID = 5,
                    HouseNumber = "103B",
                    Street = "Raven's Court",
                    County = Counties.Cornwall,
@@ -199,7 +199,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   AddressID = 6,
+                  // AddressID = 6,
                    HouseNumber = "9",
                    Street = "Blenheim Close",
                    County = Counties.Kent,
@@ -208,7 +208,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   AddressID = 7,
+                  // AddressID = 7,
                    HouseNumber = "221b",
                    Street = "Baker Street",
                    County = Counties.GreaterLondon,
@@ -217,7 +217,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   AddressID = 8,
+                   //AddressID = 8,
                    HouseNumber = "45",
                    Street = "Spooner Street",
                    County = Counties.Derbyshire,
@@ -226,7 +226,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   AddressID = 9,
+                   //AddressID = 9,
                    HouseNumber = "15",
                    Street = "Sesame Street",
                    County = Counties.NorthYorkshire,
@@ -235,7 +235,7 @@ namespace TwinSkinLondon.Data
                },
                new Address
                {
-                   AddressID = 10,
+                   //AddressID = 10,
                    HouseNumber = "10",
                    Street = "Bond Street",
                    County = Counties.Kent,
@@ -402,8 +402,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                   // OrderItemID = 1,
-                  OrderID = 1,
-                  ProductID = 11,
+                  OrderID = 6011,
+                  ProductID = 1005,
                   Price = 25,
                   Quantity = 2,
 
@@ -411,8 +411,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                   // OrderItemID = 2,
-                  OrderID = 2,
-                  ProductID = 12,
+                  OrderID = 6012,
+                  ProductID = 1006,
                   Price = 30,
                   Quantity = 1,
 
@@ -420,8 +420,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                   // OrderItemID = 3,
-                  OrderID = 3,
-                  ProductID = 13,
+                  OrderID = 6013,
+                  ProductID = 1007,
                   Price = 20,
                   Quantity = 2,
 
@@ -429,8 +429,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                   // OrderItemID = 4,
-                  OrderID = 4,
-                  ProductID = 14,
+                  OrderID = 6014,
+                  ProductID = 1008,
                   Price = 60,
                   Quantity = 2,
 
@@ -438,8 +438,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                   // OrderItemID = 5,
-                  OrderID = 5,
-                  ProductID = 15,
+                  OrderID = 6015,
+                  ProductID = 1009,
                   Price = 15,
                   Quantity = 2,
 
@@ -447,8 +447,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                   // OrderItemID = 6,
-                  OrderID = 6,
-                  ProductID = 16,
+                  OrderID = 6016,
+                  ProductID = 1010,
                   Price = 15,
                   Quantity = 2,
 
@@ -456,8 +456,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                   // OrderItemID = 7,
-                  OrderID = 7,
-                  ProductID = 17,
+                  OrderID = 6017,
+                  ProductID = 1011,
                   Price = 40,
                   Quantity = 2,
 
@@ -465,8 +465,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                   // OrderItemID = 8,
-                  OrderID = 8,
-                  ProductID = 18,
+                  OrderID = 6018,
+                  ProductID = 1012,
                   Price = 25,
                   Quantity = 2,
 
@@ -474,8 +474,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                   // OrderItemID = 9,
-                  OrderID = 9,
-                  ProductID = 19,
+                  OrderID = 6019,
+                  ProductID = 1013,
                   Price = 90,
                   Quantity = 2,
 
@@ -483,8 +483,8 @@ namespace TwinSkinLondon.Data
                new OrderItem
                {
                   // OrderItemID = 10,
-                  OrderID = 10,
-                  ProductID = 20,
+                  OrderID = 6020,
+                  ProductID = 1013,
                   Price = 20,
                   Quantity = 2,
 
@@ -514,112 +514,102 @@ namespace TwinSkinLondon.Data
                new Order
                {
                   //OrderID = 2,
-                  DateOrdered = new DateTime(2020, 5, 1, 8, 30, 52),
-                  DateDelivered = new DateTime(2020, 5, 5, 12, 30, 21),
+                  Date= new DateTime(2020, 5, 1),
                   Status = Status.Delivered,
                   VAT =20,
                   DeliveryCharge = 20,
-                  CustomerID = 1,
+                  CustomerID = 4003,
 
                 },
                new Order
                {
                   //OrderID = 3,
-                  DateOrdered = new DateTime(2020, 5, 2, 8, 30, 34),
-                  DateDelivered = new DateTime(2020, 5, 6, 10, 20, 36),
+                  Date = new DateTime(2020, 5, 2),
                   Status = Status.InProgress,
                   VAT =20,
                   DeliveryCharge = 10,
-                  CustomerID = 2,
+                  CustomerID = 4004,
 
                 },
                new Order
                {
-                  OrderID = 4,
-                  DateOrdered = new DateTime(2020, 5, 3, 7, 21, 50),
-                  DateDelivered = new DateTime(2020, 5, 7, 5, 14, 46),
+                  //OrderID = 4,
+                  Date = new DateTime(2020, 5, 3),
                   Status = Status.Dispatched,
                   VAT =20,
                   DeliveryCharge = 20,
-                  CustomerID = 3,
+                  CustomerID = 4005,
 
                 },
                new Order
                {
-                  OrderID = 4,
-                  DateOrdered = new DateTime(2020, 5, 4, 5, 10, 13),
-                  DateDelivered = new DateTime(2020, 5, 7, 6, 45, 33),
+                  //OrderID = 4,
+                  Date= new DateTime(2020, 5, 4),
                  Status = Status.Delivered,
                  VAT =20,
                   DeliveryCharge = 7,
-                  CustomerID = 4,
+                  CustomerID = 4006,
 
                 },
                new Order
                {
-                  OrderID = 5,
-                  DateOrdered = new DateTime(2020, 5, 4, 12, 23, 32),
-                  DateDelivered = new DateTime(2020, 5, 7, 8, 17, 19),
+                  //OrderID = 5,
+                  Date= new DateTime(2020, 5, 4),
                   Status = Status.Delivered,
                   VAT =20,
                   DeliveryCharge = 14,
-                   CustomerID = 5,
+                   CustomerID = 4007,
 
 
                 },
                new Order
                {
-                  OrderID = 6,
-                  DateOrdered = new DateTime(2020, 5, 5, 5, 56, 12),
-                  DateDelivered = new DateTime(2020, 5, 8, 10, 34, 15),
+                  //OrderID = 6,
+                  Date = new DateTime(2020, 5, 5),
                   Status = Status.Delivered,
                 VAT =20,
                   DeliveryCharge = 10,
-                  CustomerID = 6,
+                  CustomerID = 4008,
 
                 },
                new Order
                {
-                  OrderID = 7,
-                  DateOrdered = new DateTime(2020, 5, 6, 4, 48, 22),
-                  DateDelivered = new DateTime(2020, 5, 9, 11, 45, 24),
+                  //OrderID = 7,
+                  Date= new DateTime(2020, 5, 6),
                   Status = Status.Delivered,
                   VAT =20,
                   DeliveryCharge = 15,
-                  CustomerID = 7,
+                  CustomerID = 4009,
 
                 },
                new Order
                {
-                  OrderID = 8,
-                  DateOrdered = new DateTime(2020, 5, 6, 8, 17, 47),
-                  DateDelivered = new DateTime(2020, 5, 9, 12, 45, 52),
+                  //OrderID = 8,
+                  Date= new DateTime(2020, 5, 6),
                   Status = Status.Delivered,
                   VAT =20,
                   DeliveryCharge = 13,
-                  CustomerID = 8,
+                  CustomerID = 4010,
 
                 },
                new Order
                {
-                  OrderID = 9,
-                  DateOrdered = new DateTime(2020, 5, 7, 5, 34, 18),
-                  DateDelivered = new DateTime(2020, 5, 10, 7, 45, 16),
+                  //OrderID = 9,
+                  Date = new DateTime(2020, 5, 7),
                   Status = Status.Delivered,
                  VAT =20,
                   DeliveryCharge = 8,
-                  CustomerID = 9,
+                  CustomerID = 4011,
 
                 },
                new Order
                {
-                  OrderID = 10,
-                  DateOrdered = new DateTime(2020, 5, 8, 7, 33, 13),
-                  DateDelivered = new DateTime(2020, 5, 11, 9, 29, 19),
+                  //OrderID = 10,
+                  Date = new DateTime(2020, 5, 8),
                   Status = Status.Delivered,
                VAT =20,
                   DeliveryCharge = 16,
-                  CustomerID = 10,
+                  CustomerID = 4012,
 
                 },
             };
@@ -644,84 +634,84 @@ namespace TwinSkinLondon.Data
             {
                 new Message
                 {
-                    MessageID = 1,
+                    //MessageID = 1,
                     Date = new DateTime(2020, 05, 05),
                     Subject = "Delivery",
                     MessageField = "I ordered my product 2 days ago with next day delivery and it hasnt turned up",
-                    CustomerID = 1,
+                    CustomerID = 4003,
                 },
                  new Message
                 {
-                    MessageID = 2,
+                    //MessageID = 2,
                     Date = new DateTime(2020, 05, 06),
                     Subject = "Availability",
                     MessageField = "I noticed this product is out of stock. When it is coming in?",
-                    CustomerID = 2,
+                    CustomerID = 4004,
                 },
                   new Message
                 {
-                    MessageID = 3,
+                    //MessageID = 3,
                     Date = new DateTime(2020, 05, 07),
                     Subject = "Product",
                     MessageField = "I wanted if you are bringing in any new face masks?",
-                    CustomerID = 3,
+                    CustomerID = 4005,
                 },
                    new Message
                 {
-                    MessageID = 4,
+                    //MessageID = 4,
                     Date = new DateTime(2020, 05, 08),
                     Subject = "Allergies",
                     MessageField = "I am allergic to nuts. Do you use wallnuts in your products?",
-                    CustomerID = 4,
+                    CustomerID = 4006,
                 },
 
                      new Message
                 {
-                    MessageID = 5,
+                    //MessageID = 5,
                     Date = new DateTime(2020, 05, 09),
                     Subject = "Delivery",
                     MessageField = "How much are your delivery cost?",
-                    CustomerID = 5,
+                    CustomerID = 4007,
                 },
                       new Message
                 {
-                    MessageID = 6,
+                    //MessageID = 6,
                     Date = new DateTime(2020, 05, 11),
                     Subject = "Product",
                     MessageField = "Why have you discontinued your Aloe-Vera Night Gel?",
-                    CustomerID = 6,
+                    CustomerID = 4008,
                 },
                        new Message
                        {
-                    MessageID = 7,
+                    //MessageID = 7,
                     Date = new DateTime(2020, 05, 11),
                     Subject = "Order",
                     MessageField = "I did not receive a confirmation for my order by email.",
-                    CustomerID = 7,
+                    CustomerID = 4009,
                 },
                         new Message
                 {
-                    MessageID = 8,
+                    //MessageID = 8,
                     Date = new DateTime(2020, 05, 13),
                     Subject = "Order",
                     MessageField = "Are the delivery estimations on your website?",
-                    CustomerID = 8,
+                    CustomerID = 4010,
                 },
                          new Message
                 {
-                    MessageID = 9,
+                    //MessageID = 9,
                     Date = new DateTime(2020, 05, 12),
                     Subject = "Offers",
                     MessageField = "Do you have any offers available on your websites?",
-                    CustomerID = 9,
+                    CustomerID = 4011,
                 },
  new Message
                 {
-                    MessageID = 10,
+                    //MessageID = 10,
                     Date = new DateTime(2020, 05, 13),
                     Subject = "Offers",
                     MessageField = "Do you offers any student discounts?",
-                    CustomerID = 10,
+                    CustomerID = 4012,
                },
 
             };
@@ -861,9 +851,9 @@ namespace TwinSkinLondon.Data
                     new Review
                     {
                       // ReviewID=1,
-                       CustomerID=1,
-                       Date = new DateTime(2020, 05, 5),
-                       ProductID=11,
+                       CustomerID=4003,
+                       Date = new DateTime(2020,05,5,3,4,5),
+                       ProductID=1005,
                        StarRating=4,
                        ReviewField="This product was amazing. Great for my skin tone.",
                       
@@ -871,9 +861,9 @@ namespace TwinSkinLondon.Data
                      new Review
                     {
                       // ReviewID=2,
-                       CustomerID=2,
+                       CustomerID=4004,
                        Date = new DateTime(2020, 05, 8),
-                       ProductID=12,
+                       ProductID=1006,
                        StarRating=3,
                        ReviewField="The product is worth the money but the parcel did arrived one day late.",
                       
@@ -881,9 +871,9 @@ namespace TwinSkinLondon.Data
                       new Review
                     {
                       // ReviewID=3,
-                       CustomerID=3,
+                       CustomerID=4005,
                        Date = new DateTime(2020, 05, 7),
-                       ProductID=13,
+                       ProductID=1007,
                        StarRating=5,
                        ReviewField="Loved this product. Amazing.",
                        
@@ -891,9 +881,9 @@ namespace TwinSkinLondon.Data
                        new Review
                     {
                       // ReviewID=4,
-                       CustomerID=4,
+                       CustomerID=4006,
                        Date = new DateTime(2020, 05, 9),
-                       ProductID=14,
+                       ProductID=1008,
                        StarRating=1,
                        ReviewField="The product did not do well for my skin. It left my skin irritated.",
                        
@@ -901,9 +891,9 @@ namespace TwinSkinLondon.Data
                         new Review
                     {
                        //ReviewID=5,
-                       CustomerID=5,
+                       CustomerID=4007,
                        Date = new DateTime(2020, 05, 6),
-                       ProductID=15,
+                       ProductID=1009,
                        StarRating=5,
                        ReviewField="I ordered a whole skin care routine it has match my lifestyle perfectly.",
                        
@@ -911,9 +901,9 @@ namespace TwinSkinLondon.Data
                          new Review
                     {
                       // ReviewID=6,
-                       CustomerID=6,
+                       CustomerID=4008,
                        Date = new DateTime(2020, 05, 8),
-                       ProductID=16,
+                       ProductID=1010,
                        StarRating=3,
                        ReviewField="The price is perfect for what you get.",
                     
@@ -921,9 +911,9 @@ namespace TwinSkinLondon.Data
                           new Review
                     {
                       // ReviewID=7,
-                       CustomerID=7,
+                       CustomerID=4009,
                        Date = new DateTime(2020, 05, 9),
-                       ProductID=17,
+                       ProductID=1011,
                        StarRating=4,
                        ReviewField="Not have one problem with this brand, would recomend.",
                      
@@ -931,9 +921,9 @@ namespace TwinSkinLondon.Data
                            new Review
                     {
                       // ReviewID=8,
-                       CustomerID=8,
+                       CustomerID=4010,
                        Date = new DateTime(2020, 05, 10),
-                       ProductID=18,
+                       ProductID=1012,
                        StarRating=2,
                        ReviewField="This is a terrible product.",
                       
@@ -941,9 +931,9 @@ namespace TwinSkinLondon.Data
                             new Review
                     {
                        //ReviewID=9,
-                       CustomerID=9,
+                       CustomerID=4011,
                        Date = new DateTime(2020, 05, 11),
-                       ProductID=19,
+                       ProductID=1013,
                        StarRating=5,
                        ReviewField="Love it, love it, love it.",
                       
@@ -951,9 +941,9 @@ namespace TwinSkinLondon.Data
                              new Review
                     {
                       // ReviewID=10,
-                       CustomerID=10,
+                       CustomerID=4012,
                        Date = new DateTime(2020, 05, 12),
-                       ProductID=20,
+                       ProductID=1013,
                        StarRating=2,
                        ReviewField="We don't get much for your money.",
                       

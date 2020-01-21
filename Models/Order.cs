@@ -10,10 +10,10 @@ namespace TwinSkinLondon.Models
     public class Order
     {
         public int OrderID { get; set; }
-
-        public DateTime DateOrdered { get; set; }
-
-        public DateTime DateDelivered { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public DateTime Date { get; set; }
+        
 
         public Status Status { get; set; }
 
