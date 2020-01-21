@@ -23,8 +23,8 @@ namespace TwinSkinLondon.Models
 
         // Navigation
 
-        public Order Order { get; set; }
-        public Product Product { get; set; }
+        public virtual Order Order { get; set; }
+        public virtual Product Product { get; set; }
 
     }
 }
