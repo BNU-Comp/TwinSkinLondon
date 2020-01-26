@@ -7076,4 +7076,8 @@ button {
         background-color: #D2BE86;
     }
 
+.form-control {
+    border: 3px solid #D2BE86;
+}
+
 /*# sourceMappingURL=bootstrap.css.map */

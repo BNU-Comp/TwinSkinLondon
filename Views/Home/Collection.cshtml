@@ -2,7 +2,6 @@
 
 @{
     ViewData["Title"] = "Collection";
-    int count = 0;
 }
 
 <div class="container">
@@ -10,10 +9,11 @@
     <div class="row">
 
         <!-- BEGIN PRODUCTS -->
-        @foreach (var item in Model) {
+        @foreach (var item in Model) 
+        {
             <div class="col-md-3 col-sm-6">
                 <span class="thumbnail">
-                    <img src="https://wolper.com.au/wp-content/uploads/2017/10/image-placeholder.jpg" alt="...">
+                    <img src="@Html.DisplayFor(modelItem => item.ImageURL)" alt="...">
                     <h4>@Html.DisplayFor(modelItem => item.Name)</h4>
                     <div class="ratings">
                         <span class="glyphicon glyphicon-star"></span>
@@ -22,18 +22,20 @@
                         <span class="glyphicon glyphicon-star"></span>
                         <span class="glyphicon glyphicon-star-empty"></span>
                     </div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <p>@Html.DisplayFor(modelItem => item.Description)</p>
                     <hr class="line">
                     <div class="row">
                         <div class="col-md-4 col-sm-6">
-                            <p class="price">£0.00</p>
+                            <p class="price">@Html.DisplayFor(modelItem => item.Name)</p>
                         </div>
                         <div class="col-md-6 col-sm-6">
-                            <a href="" target="_blank">  <button class="btn btn-info right"> Shop Now</button></a>
+                            <a class="btn-primary" asp-action="Details" asp-route-id="@item.ProductID">Shop Now</a>
                         </div>
 
                     </div>
                 </span>
             </div>
         }
+        </div>
+    </div>
 

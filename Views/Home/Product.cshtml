@@ -1,0 +1,46 @@
+﻿@model IEnumerable<TwinSkinLondon.Models.Product>
+
+@{
+    ViewData["Title"] = "Product";
+}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 item-photo">
+                <img style="max-width:100%;" src="~/images/Triple Pack - SAVE.jpg" />
+            </div>
+            <div class="col-xs-5" style="border:0px solid #D2BE86">
+                <!-- Name -->
+                <h3>TwinSkin London Skin Care Bundle</h3>
+
+                <!-- Price -->
+                <h6 class="title-price"><small>PRICE</small></h6>
+                <h3 style="margin-top:0px;">£60.00</h3>
+
+                <div class="section" style="padding-bottom:20px;">
+                    <h6 class="title-attr"><small>QUANTITY</small></h6>
+                    <div>
+                        <div class="btn-minus"><span class="glyphicon glyphicon-minus"></span></div>
+                        <input value="1" />
+                        <div class="btn-plus"><span class="glyphicon glyphicon-plus"></span></div>
+                    </div>
+                </div>
+
+                <div class="section" style="padding-bottom:20px;">
+                    <button class="btn btn-success"><span style="margin-right:20px" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Add To Basket</button>
+                </div>
+            </div>
+
+            <div class="col-xs-9">
+                <div style="width:100%;border-top:1px solid silver">
+                    <p style="padding:15px;">
+                        <small>
+                            TwinSkin London’s Retinol and Collagen Bundle gives you the ultimate skincare routine for both preventing and reversing any signs of ageing.  Nourish your skin with Retinol, Collagen and tonnes of antioxidants while leaving your skin hydrated, blemish free and your complexion flawless." +
+                            "TwinSkin London’s Cleanser, Serum and Moisturiser combine Retinol and Collagen and are packed with antioxidants reducing fine lines, wrinkles, crow’s feet and dark circles, giving your skin a natural, radiant glow, flawless complexion and an uplifting effect.
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
