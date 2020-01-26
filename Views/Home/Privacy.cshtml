@@ -1,6 +1,39 @@
-﻿@{
-    ViewData["Title"] = "Privacy Policy";
-}
-<h2>@ViewData["Title"]</h2>
+﻿@model IEnumerable<TwinSkinLondon.Models.Product>
 
-<p>Use this page to detail your site's privacy policy.</p>
+@{
+    ViewData["Title"] = "Collection";
+    int count = 0;
+}
+
+<div class="container">
+    <h4>NEW COLLECTION</h4>
+    <div class="row">
+
+        <!-- BEGIN PRODUCTS -->
+        @foreach (var item in Model) {
+            <div class="col-md-3 col-sm-6">
+                <span class="thumbnail">
+                    <img src="https://wolper.com.au/wp-content/uploads/2017/10/image-placeholder.jpg" alt="...">
+                    <h4>@Html.DisplayFor(modelItem => item.Name)</h4>
+                    <div class="ratings">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <hr class="line">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <p class="price">£0.00</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <a href="" target="_blank">  <button class="btn btn-info right"> Shop Now</button></a>
+                        </div>
+
+                    </div>
+                </span>
+            </div>
+        }
+

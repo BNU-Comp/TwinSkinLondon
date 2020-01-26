@@ -17,7 +17,7 @@ namespace TwinSkinLondon.Models
         [StringLength(1000), DataType(DataType.MultilineText)]
         public string Description { get; set; }
 
-        public Categories  Category { get; set; }
+        public Categories Category { get; set; }
 
         [StringLength(100), DataType(DataType.ImageUrl)]
         public string ImageURL { get; set; }
