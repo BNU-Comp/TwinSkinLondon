@@ -3,21 +3,19 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TwinSkinLondon.Data;
 
-namespace TwinSkinLondon.Data.Migrations
+namespace TwinSkinLondon.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200126215741_updatePages")]
-    partial class updatePages
+    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.14-servicing-32113")
+                .HasAnnotation("ProductVersion", "2.1.11-servicing-32099")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -274,7 +272,9 @@ namespace TwinSkinLondon.Data.Migrations
 
                     b.Property<int>("CustomerID");
 
-                    b.Property<DateTime>("Date");
+                    b.Property<DateTime>("DateDelivered");
+
+                    b.Property<DateTime>("DateOrdered");
 
                     b.Property<decimal>("DeliveryCharge");
 
