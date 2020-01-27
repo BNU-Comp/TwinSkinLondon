@@ -19,6 +19,7 @@ namespace TwinSkinLondon.Models
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime DateDelivered { get; set; }
 
+
         public Status Status { get; set; }
 
         [DataType(DataType.Currency)]
