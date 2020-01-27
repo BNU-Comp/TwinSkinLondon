@@ -53,6 +53,22 @@ namespace TwinSkinLondon.Controllers
             return View();
         }
 
+        public IActionResult Product()
+        {
+            return View();
+            
+        }
+
+        public IActionResult Reviews()
+        {
+            return View();
+        }
+
+        public IActionResult MyAccount()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
