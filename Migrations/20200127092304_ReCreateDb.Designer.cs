@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TwinSkinLondon.Data;
 
-namespace TwinSkinLondon.Data.Migrations
+namespace TwinSkinLondon.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20191209110134_SeedDatabase")]
-    partial class SeedDatabase
+    [Migration("20200127092304_ReCreateDb")]
+    partial class ReCreateDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -213,7 +213,7 @@ namespace TwinSkinLondon.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("AddressID");
+                    b.Property<int?>("AddressID");
 
                     b.Property<string>("ContactNumber")
                         .HasMaxLength(20);
@@ -230,7 +230,7 @@ namespace TwinSkinLondon.Data.Migrations
                         .IsRequired()
                         .HasMaxLength(50);
 
-                    b.Property<int>("PaymentCardID");
+                    b.Property<int?>("PaymentCardID");
 
                     b.HasKey("CustomerID");
 
@@ -249,7 +249,7 @@ namespace TwinSkinLondon.Data.Migrations
 
                     b.Property<int>("CustomerID");
 
-                    b.Property<int>("Date");
+                    b.Property<DateTime>("Date");
 
                     b.Property<string>("MessageField")
                         .IsRequired()
@@ -328,7 +328,7 @@ namespace TwinSkinLondon.Data.Migrations
 
                     b.Property<string>("CardNumber")
                         .IsRequired()
-                        .HasMaxLength(20);
+                        .HasMaxLength(19);
 
                     b.Property<int>("ExpiryMonth");
 
@@ -348,7 +348,7 @@ namespace TwinSkinLondon.Data.Migrations
                     b.Property<int>("Category");
 
                     b.Property<string>("Description")
-                        .HasMaxLength(500);
+                        .HasMaxLength(1000);
 
                     b.Property<string>("ImageURL")
                         .HasMaxLength(100);
@@ -445,13 +445,11 @@ namespace TwinSkinLondon.Data.Migrations
                 {
                     b.HasOne("TwinSkinLondon.Models.Address", "Address")
                         .WithMany()
-                        .HasForeignKey("AddressID")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("AddressID");
 
                     b.HasOne("TwinSkinLondon.Models.PaymentCard", "PaymentCard")
                         .WithMany()
-                        .HasForeignKey("PaymentCardID")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("PaymentCardID");
                 });
 
             modelBuilder.Entity("TwinSkinLondon.Models.Message", b =>
