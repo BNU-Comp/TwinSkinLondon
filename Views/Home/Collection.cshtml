@@ -9,34 +9,77 @@
     <div class="row">
 
         <!-- BEGIN PRODUCTS -->
-        @foreach (var item in Model)
-        {
-            <div class="col-md-3 col-sm-6">
-                <span class="thumbnail">
-                    <img src="@Html.DisplayFor(modelItem => item.ImageURL)" alt="...">
-                    <h4>@Html.DisplayFor(modelItem => item.Name)</h4>
-                    <div class="ratings">
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
+        <div class="col-md-4 col-sm-6">
+            <span class="thumbnail">
+                <img src="~/images/Website Cleanser Bottle.jpg" alt="...">
+                <h4>Twin Skin London Cleanser</h4>
+                <div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+                <p>TwinSkin London’s Retinol and Collagen Bundle gives you the ultimate skincare routin</p>
+                <hr class="line">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <p class="price">£30.00</p>
                     </div>
-                    <p>@Html.DisplayFor(modelItem => item.Description)</p>
-                    <hr class="line">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6">
-                            <p class="price">@Html.DisplayFor(modelItem => item.Name)</p>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <a class="btn-primary" asp-action="Details" asp-route-id="@item.ProductID">Shop Now</a>
-                        </div>
+                    <div class="col-md-6 col-sm-6">
+                        <a class="btn-primary" href="/home/product">Shop Now</a>
+                    </div>
 
+                </div>
+            </span>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <span class="thumbnail">
+                <img src="~/images/Website Cleanser Bottle.jpg" alt="...">
+                <h4>Twin Skin London Cleanser</h4>
+                <div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+                <p>TwinSkin London’s Retinol and Collagen Bundle gives you the ultimate skincare routin</p>
+                <hr class="line">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <p class="price">£30.00</p>
                     </div>
-                </span>
-            </div>
-        }
+                    <div class="col-md-6 col-sm-6">
+                        <a class="btn-primary" href="/home/product">Shop Now</a>
+                    </div>
+
+                </div>
+            </span>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <span class="thumbnail">
+                <img src="~/images/Website Cleanser Bottle.jpg" alt="...">
+                <h4>Twin Skin London Cleanser</h4>
+                <div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+                <p>TwinSkin London’s Retinol and Collagen Bundle gives you the ultimate skincare routin</p>
+                <hr class="line">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <p class="price">£30.00</p>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <a class="btn-primary" href="/home/product">Shop Now</a>
+                    </div>
+
+                </div>
+            </span>
+        </div>
     </div>
-</div>
-
-﻿ 
+        </div>
